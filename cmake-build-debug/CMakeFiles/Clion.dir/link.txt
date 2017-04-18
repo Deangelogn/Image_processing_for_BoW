@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/Clion.dir/main.c.o CMakeFiles/Clion.dir/src/image.c.o CMakeFiles/Clion.dir/src/histogram.c.o CMakeFiles/Clion.dir/src/adjRelation.c.o CMakeFiles/Clion.dir/src/morphology.c.o CMakeFiles/Clion.dir/src/math.c.o  -o Clion 
