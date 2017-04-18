@@ -1,2 +1,4 @@
 # MO815---Image-processing-for-a-Bag-of-Words-Project
-A set of C files useful for Bag of Words projects 
+A set of C files useful for doing Bag of Words projects 
+
+-------------------------------------Still work in progress----------------------------
