@@ -4,7 +4,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/Clion.dir/src/histogram.c.o"
   "CMakeFiles/Clion.dir/src/adjRelation.c.o"
   "CMakeFiles/Clion.dir/src/morphology.c.o"
-  "CMakeFiles/Clion.dir/src/math.c.o"
+  "CMakeFiles/Clion.dir/src/myMath.c.o"
+  "CMakeFiles/Clion.dir/src/alg.c.o"
+  "CMakeFiles/Clion.dir/src/bow.c.o"
+  "CMakeFiles/Clion.dir/src/stringManipulation.c.o"
+  "CMakeFiles/Clion.dir/src/direct.c.o"
   "Clion.pdb"
   "Clion"
 )

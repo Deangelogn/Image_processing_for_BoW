@@ -87,16 +87,28 @@
 		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/adjRelation.h">
 			<Option target="Clion"/>
 		</Unit>
+		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/alg.h">
+			<Option target="Clion"/>
+		</Unit>
+		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/bow.h">
+			<Option target="Clion"/>
+		</Unit>
+		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/direct.h">
+			<Option target="Clion"/>
+		</Unit>
 		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/histogram.h">
 			<Option target="Clion"/>
 		</Unit>
 		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/image.h">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/math.h">
+		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/morphology.h">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/morphology.h">
+		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/myMath.h">
+			<Option target="Clion"/>
+		</Unit>
+		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/stringManipulation.h">
 			<Option target="Clion"/>
 		</Unit>
 		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/main.c">
@@ -105,16 +117,28 @@
 		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/adjRelation.c">
 			<Option target="Clion"/>
 		</Unit>
+		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/alg.c">
+			<Option target="Clion"/>
+		</Unit>
+		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/bow.c">
+			<Option target="Clion"/>
+		</Unit>
+		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/direct.c">
+			<Option target="Clion"/>
+		</Unit>
 		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/histogram.c">
 			<Option target="Clion"/>
 		</Unit>
 		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/image.c">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/math.c">
+		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/morphology.c">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/morphology.c">
+		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/myMath.c">
+			<Option target="Clion"/>
+		</Unit>
+		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/stringManipulation.c">
 			<Option target="Clion"/>
 		</Unit>
 		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/CMakeLists.txt">

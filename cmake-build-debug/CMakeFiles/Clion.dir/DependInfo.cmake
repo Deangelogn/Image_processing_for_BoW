@@ -6,10 +6,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/eu/Desktop/C_C++/Image_processing_for_BoW/main.c" "/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles/Clion.dir/main.c.o"
   "/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/adjRelation.c" "/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles/Clion.dir/src/adjRelation.c.o"
+  "/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/alg.c" "/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles/Clion.dir/src/alg.c.o"
+  "/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/bow.c" "/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles/Clion.dir/src/bow.c.o"
+  "/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/direct.c" "/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles/Clion.dir/src/direct.c.o"
   "/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/histogram.c" "/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles/Clion.dir/src/histogram.c.o"
   "/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/image.c" "/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles/Clion.dir/src/image.c.o"
-  "/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/math.c" "/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles/Clion.dir/src/math.c.o"
   "/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/morphology.c" "/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles/Clion.dir/src/morphology.c.o"
+  "/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/myMath.c" "/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles/Clion.dir/src/myMath.c.o"
+  "/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/stringManipulation.c" "/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles/Clion.dir/src/stringManipulation.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

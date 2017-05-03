@@ -12,8 +12,6 @@ typedef struct Histogram{
     int *bins;
     float *normBins;
     float *binWindow;
-
-
 }Histogram;
 
 void getGrayHistogram(Image *img,Histogram *hist, int numBins);

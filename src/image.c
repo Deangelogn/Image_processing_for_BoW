@@ -6,8 +6,9 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "../header/math.h"
+#include "../header/myMath.h"
 
+//_____________________________useful functions____________________
 char * getExtention(char filename[]){
     char *ext;
     ext = strrchr(filename, '.');
@@ -33,13 +34,31 @@ void setImage(Image *img, int numChannels, int numRows, int numCols, int maxInte
     img->maxIntensity = maxIntensity;
     img->ch = malloc(numChannels*sizeof(intensityMap));
     for (int i = 0; i < numChannels; ++i) {
-        img->ch[i].vecIntensity = malloc((numRows*numCols)*sizeof(unsigned char));
-        img->ch[i].matIntensity = malloc(numRows * sizeof(unsigned char*));
+        img->ch[i].vecIntensity = malloc((numRows*numCols)*sizeof(float));
+        img->ch[i].matIntensity = malloc(numRows * sizeof(float*));
         for (int j = 0; j < numRows; j++) {
-            img->ch[i].matIntensity[j] = malloc(numCols * sizeof(unsigned char));
+            img->ch[i].matIntensity[j] = malloc(numCols * sizeof(float));
         }
     }
 }
+
+void printImage(Image *img){
+    for (int i = 0; i < img->nChannels; ++i) {
+        printf("channel %d:\n", i);
+        for (int j = 0; j < img->numPixels; ++j) {
+            printf("%d, ", (int)img->ch[i].vecIntensity[j]);
+            if((j+1)%img->numCols==0){
+                printf(";\n");
+            }
+        }
+        printf("\n");
+    }
+}
+
+//____________________________end___________________________________
+
+
+// _____________________reading functions_______________________
 
 void readImage(char imgPath[], Image *img){
 
@@ -58,9 +77,6 @@ void readImage(char imgPath[], Image *img){
     }
 
 }
-
-// _____________________reading functions_______________________
-
 //PGM------------
 void readPGMImage(char imgPath[], Image *img){
     FILE *f;
@@ -94,7 +110,7 @@ void readPGMImage(char imgPath[], Image *img){
     if( strcmp(magicNum,"P2")==0 ){
         int r,c;
         for(int i=0; i< img->numPixels; i++){
-            fscanf(f,"%hhu",&img->ch[0].vecIntensity[i]);
+            fscanf(f,"%f",&img->ch[0].vecIntensity[i]);
             //Fill Matrix
             r = i/img->numCols;
             c = i%img->numCols;
@@ -105,7 +121,7 @@ void readPGMImage(char imgPath[], Image *img){
         //Set intensities for P5 images
     else if( strcmp(magicNum,"P5")==0 ){
         fgetc(f);
-        fread(img->ch[0].vecIntensity,sizeof(unsigned char),img->numPixels,f);
+        fread(img->ch[0].vecIntensity,sizeof(float),img->numPixels,f);
 
         //Fill Matrix
         int r,c;
@@ -165,10 +181,9 @@ void readPPMImage(char imgPath[], Image *img){
 
     if (strcmp(magicNum,"P3")==0){
         int r,c;
-        unsigned char val;
         for (int i = 0; i < img->numPixels; ++i) {
             for (int j = 0; j < img->nChannels; ++j) {
-                fscanf(f,"%hhu",&img->ch[j].vecIntensity[i]);
+                fscanf(f,"%f",&img->ch[j].vecIntensity[i]);
                 r = i/img->numCols;
                 c = i%img->numCols;
                 img->ch[j].matIntensity[r][c] = img->ch[j].vecIntensity[i];
@@ -225,7 +240,7 @@ void saveP2Image(Image *img, char filename[]){
 
     for (int i = 0; i < img->numRows; i++){
         for (int j = 0; j < img->numCols; j++){
-            fprintf(f,"%u ",img->ch[0].matIntensity[i][j]);
+            fprintf(f,"%f ",img->ch[0].matIntensity[i][j]);
         }
         fprintf(f,"\n");
     }
@@ -239,7 +254,7 @@ void saveP3Image(Image *img, char filename[]){
 
     for (int i = 0; i < img->numPixels; i++){
         for (int j = 0; j < img->nChannels; j++){
-            fprintf(f,"%u ",img->ch[j].vecIntensity[i]);
+            fprintf(f,"%d ",(int)img->ch[j].vecIntensity[i]);
         }
         fprintf(f,"\n");
     }
@@ -250,7 +265,7 @@ void saveP3Image(Image *img, char filename[]){
 void saveP5Image(Image *img, char filename[]){
     FILE *f = fopen(filename, "wb");
     fprintf(f, "P5\n%d %d\n%d\n", img->numCols,img->numRows, img->maxIntensity);
-    fwrite(img->ch[0].vecIntensity, sizeof(unsigned char), img->numPixels, f);
+    fwrite(img->ch[0].vecIntensity, sizeof(float), img->numPixels, f);
     fclose(f);
 }
 
@@ -261,12 +276,19 @@ void saveP6Image(Image *img, char filename[]){
     unsigned char color[3];
     for (int i = 0; i < img->numPixels; i++){
         for (int j = 0; j < img->nChannels; j++){
-            color[j] = img->ch[j].vecIntensity[i];
+            color[j] = (unsigned char)img->ch[j].vecIntensity[i];
         }
         fwrite(color, sizeof(unsigned char), 3, f);
     }
     fclose(f);
 }
+
+void copyImg(char *from, char *to){
+    Image img;
+    readImage(from,&img);
+    saveP6Image(&img,to);
+}
+
 //____________________________________end__________________________________
 
 //_____________________________Conversions________________________________
@@ -283,9 +305,9 @@ void rgb2ycbcr(Image *rgbImg, Image *ycbcrImg){
         R = rgbImg->ch[0].vecIntensity[i];
         G = rgbImg->ch[1].vecIntensity[i];
         B = rgbImg->ch[2].vecIntensity[i];
-        ycbcrImg->ch[0].vecIntensity[i] = (unsigned char)clip(round(Kr*R + Kg*G + Kb*B + 16), 16, ycbcrImg->maxIntensity);
-        ycbcrImg->ch[1].vecIntensity[i] = (unsigned char)clip(round(Cbr*R + Cbg*G + Cbb*B + 128),16, ycbcrImg->maxIntensity);
-        ycbcrImg->ch[2].vecIntensity[i] = (unsigned char)clip(round(Crr*R + Crg*G + Crb*B + 128),16, ycbcrImg->maxIntensity);
+        ycbcrImg->ch[0].vecIntensity[i] = (float)clip(round(Kr*R + Kg*G + Kb*B + 16), 16, ycbcrImg->maxIntensity);
+        ycbcrImg->ch[1].vecIntensity[i] = (float)clip(round(Cbr*R + Cbg*G + Cbb*B + 128),16, ycbcrImg->maxIntensity);
+        ycbcrImg->ch[2].vecIntensity[i] = (float)clip(round(Crr*R + Crg*G + Crb*B + 128),16, ycbcrImg->maxIntensity);
     }
 }
 
@@ -303,14 +325,66 @@ void ycbcr2rgb(Image *ycbcrImg, Image *rgbImg){
         Y = ycbcrImg->ch[0].vecIntensity[i];
         Cb = ycbcrImg->ch[1].vecIntensity[i];
         Cr = ycbcrImg->ch[2].vecIntensity[i];
-        rgbImg->ch[0].vecIntensity[i] = (unsigned char)clip(round(RGBy * (Y-16) + Rcr*(Cr-128)), 0, rgbImg->maxIntensity);
-        rgbImg->ch[1].vecIntensity[i] = (unsigned char)clip(round(RGBy * (Y-16) + Gcr*(Cr - 128) + Gcb*(Cb - 128)), 0, rgbImg->maxIntensity);
-        rgbImg->ch[2].vecIntensity[i] = (unsigned char)clip(round(RGBy * (Y-16) + Bcb*(Cb - 128)),  0, rgbImg->maxIntensity);
+        rgbImg->ch[0].vecIntensity[i] = (float)clip(round(RGBy * (Y-16) + Rcr*(Cr-128)), 0, rgbImg->maxIntensity);
+        rgbImg->ch[1].vecIntensity[i] = (float)clip(round(RGBy * (Y-16) + Gcr*(Cr - 128) + Gcb*(Cb - 128)), 0, rgbImg->maxIntensity);
+        rgbImg->ch[2].vecIntensity[i] = (float)clip(round(RGBy * (Y-16) + Bcb*(Cb - 128)),  0, rgbImg->maxIntensity);
     }
 }
 
 void rgb2hsv(Image *rgbImg, Image *hsvImg){
 
 }
-
 //____________________________________end_________________________________
+
+void getSubImage (Image *img, Image *subImg, int rowB, int rowE, int colB, int colE){
+    setImage(subImg, 3, rowE-rowB, colE-colB, 255);
+    int k=0, index;
+    for (int i = rowB; i < rowE; ++i) {
+        for (int j = colB; j < colE; ++j) {
+            index = i*img->numCols+j;
+            subImg->ch[0].vecIntensity[k]= img->ch[0].vecIntensity[i*img->numCols+j];
+            subImg->ch[1].vecIntensity[k]= img->ch[1].vecIntensity[i*img->numCols+j];
+            subImg->ch[2].vecIntensity[k]= img->ch[2].vecIntensity[i*img->numCols+j];
+            subImg->ch[0].matIntensity[k/subImg->numCols][k%subImg->numCols] = subImg->ch[0].vecIntensity[k];
+            subImg->ch[1].matIntensity[k/subImg->numCols][k%subImg->numCols] = subImg->ch[1].vecIntensity[k];
+            subImg->ch[2].matIntensity[k/subImg->numCols][k%subImg->numCols] = subImg->ch[2].vecIntensity[k];
+            k++;
+        }
+    }
+}
+
+Image *cropImage(Image *vecImg, int numImgs, int cutX, int cutY,int *pileSize){
+    int numSubImg = 0, ik=0, rowE, colE;
+    Image *cropPile;
+    for (int l = 0; l < numImgs; ++l) {
+        numSubImg += myCeil(vecImg[l].numRows/cutX) + myCeil(vecImg[l].numRows/cutY);
+    }
+    *pileSize = numSubImg;
+    cropPile = malloc(numSubImg*sizeof(Image));
+
+    for (int i = 0; i < numImgs; ++i) {
+        for (int j = 0; j < vecImg[i].numRows; j+=cutX) {
+            for (int k = 0; k < vecImg[i].numCols; k+=cutY) {
+
+                if(j+cutX>vecImg[i].numRows){
+                    rowE = j + (vecImg[i].numRows-j);
+                }
+                else{
+                    rowE = j + cutX;
+                }
+
+                if(k+cutY>vecImg[i].numCols){
+                    colE = k + (vecImg[i].numCols-k);
+                }
+                else{
+                    colE = k + cutY;
+                }
+
+                getSubImage(&vecImg[i], &cropPile[ik],j, rowE, k, colE);
+                ik++;
+            }
+        }
+
+    }
+    return  cropPile;
+}

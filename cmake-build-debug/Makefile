@@ -177,6 +177,87 @@ src/adjRelation.c.s:
 	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/adjRelation.c.s
 .PHONY : src/adjRelation.c.s
 
+src/alg.o: src/alg.c.o
+
+.PHONY : src/alg.o
+
+# target to build an object file
+src/alg.c.o:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/alg.c.o
+.PHONY : src/alg.c.o
+
+src/alg.i: src/alg.c.i
+
+.PHONY : src/alg.i
+
+# target to preprocess a source file
+src/alg.c.i:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/alg.c.i
+.PHONY : src/alg.c.i
+
+src/alg.s: src/alg.c.s
+
+.PHONY : src/alg.s
+
+# target to generate assembly for a file
+src/alg.c.s:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/alg.c.s
+.PHONY : src/alg.c.s
+
+src/bow.o: src/bow.c.o
+
+.PHONY : src/bow.o
+
+# target to build an object file
+src/bow.c.o:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/bow.c.o
+.PHONY : src/bow.c.o
+
+src/bow.i: src/bow.c.i
+
+.PHONY : src/bow.i
+
+# target to preprocess a source file
+src/bow.c.i:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/bow.c.i
+.PHONY : src/bow.c.i
+
+src/bow.s: src/bow.c.s
+
+.PHONY : src/bow.s
+
+# target to generate assembly for a file
+src/bow.c.s:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/bow.c.s
+.PHONY : src/bow.c.s
+
+src/direct.o: src/direct.c.o
+
+.PHONY : src/direct.o
+
+# target to build an object file
+src/direct.c.o:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/direct.c.o
+.PHONY : src/direct.c.o
+
+src/direct.i: src/direct.c.i
+
+.PHONY : src/direct.i
+
+# target to preprocess a source file
+src/direct.c.i:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/direct.c.i
+.PHONY : src/direct.c.i
+
+src/direct.s: src/direct.c.s
+
+.PHONY : src/direct.s
+
+# target to generate assembly for a file
+src/direct.c.s:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/direct.c.s
+.PHONY : src/direct.c.s
+
 src/histogram.o: src/histogram.c.o
 
 .PHONY : src/histogram.o
@@ -231,33 +312,6 @@ src/image.c.s:
 	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/image.c.s
 .PHONY : src/image.c.s
 
-src/math.o: src/math.c.o
-
-.PHONY : src/math.o
-
-# target to build an object file
-src/math.c.o:
-	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/math.c.o
-.PHONY : src/math.c.o
-
-src/math.i: src/math.c.i
-
-.PHONY : src/math.i
-
-# target to preprocess a source file
-src/math.c.i:
-	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/math.c.i
-.PHONY : src/math.c.i
-
-src/math.s: src/math.c.s
-
-.PHONY : src/math.s
-
-# target to generate assembly for a file
-src/math.c.s:
-	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/math.c.s
-.PHONY : src/math.c.s
-
 src/morphology.o: src/morphology.c.o
 
 .PHONY : src/morphology.o
@@ -285,6 +339,60 @@ src/morphology.c.s:
 	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/morphology.c.s
 .PHONY : src/morphology.c.s
 
+src/myMath.o: src/myMath.c.o
+
+.PHONY : src/myMath.o
+
+# target to build an object file
+src/myMath.c.o:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/myMath.c.o
+.PHONY : src/myMath.c.o
+
+src/myMath.i: src/myMath.c.i
+
+.PHONY : src/myMath.i
+
+# target to preprocess a source file
+src/myMath.c.i:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/myMath.c.i
+.PHONY : src/myMath.c.i
+
+src/myMath.s: src/myMath.c.s
+
+.PHONY : src/myMath.s
+
+# target to generate assembly for a file
+src/myMath.c.s:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/myMath.c.s
+.PHONY : src/myMath.c.s
+
+src/stringManipulation.o: src/stringManipulation.c.o
+
+.PHONY : src/stringManipulation.o
+
+# target to build an object file
+src/stringManipulation.c.o:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/stringManipulation.c.o
+.PHONY : src/stringManipulation.c.o
+
+src/stringManipulation.i: src/stringManipulation.c.i
+
+.PHONY : src/stringManipulation.i
+
+# target to preprocess a source file
+src/stringManipulation.c.i:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/stringManipulation.c.i
+.PHONY : src/stringManipulation.c.i
+
+src/stringManipulation.s: src/stringManipulation.c.s
+
+.PHONY : src/stringManipulation.s
+
+# target to generate assembly for a file
+src/stringManipulation.c.s:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/stringManipulation.c.s
+.PHONY : src/stringManipulation.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -300,18 +408,30 @@ help:
 	@echo "... src/adjRelation.o"
 	@echo "... src/adjRelation.i"
 	@echo "... src/adjRelation.s"
+	@echo "... src/alg.o"
+	@echo "... src/alg.i"
+	@echo "... src/alg.s"
+	@echo "... src/bow.o"
+	@echo "... src/bow.i"
+	@echo "... src/bow.s"
+	@echo "... src/direct.o"
+	@echo "... src/direct.i"
+	@echo "... src/direct.s"
 	@echo "... src/histogram.o"
 	@echo "... src/histogram.i"
 	@echo "... src/histogram.s"
 	@echo "... src/image.o"
 	@echo "... src/image.i"
 	@echo "... src/image.s"
-	@echo "... src/math.o"
-	@echo "... src/math.i"
-	@echo "... src/math.s"
 	@echo "... src/morphology.o"
 	@echo "... src/morphology.i"
 	@echo "... src/morphology.s"
+	@echo "... src/myMath.o"
+	@echo "... src/myMath.i"
+	@echo "... src/myMath.s"
+	@echo "... src/stringManipulation.o"
+	@echo "... src/stringManipulation.i"
+	@echo "... src/stringManipulation.s"
 .PHONY : help
 
 

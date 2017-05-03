@@ -4,26 +4,28 @@
 
 #include "../header/image.h"
 #include "../header/adjRelation.h"
+#include "../header/myMath.h"
 #include <stdlib.h>
 #include <stdio.h>
 
 
-unsigned char * getAdjRelationValues(Image *img, AdjRelation *adjR, int x, int y){
-    unsigned char * v = malloc(adjR->numAdj*img->nChannels*sizeof(unsigned char));
+float * getAdjRelationValues(Image *img, AdjRelation *adjR, int x, int y, int ch){
+    float *v = malloc(adjR->numAdj*sizeof(float));
     int row, col;
     for (int i = 0; i < adjR->numAdj; ++i) {
-        for (int j = 0; j < img->nChannels; ++j) {
-            row = x*img->numCols + adjR->dx[i];
-            col = y + adjR->dy[i];
-            if( (row<0) || (row>=img->numRows) || (col<0) || (col>=img->numCols) ){
-                v[i*img->nChannels + j] = 0;
-            }
-            else{
-                v[i*img->nChannels + j] = img->ch[j].vecIntensity[row+col];
-            }
+        //row = (x+ adjR->dx[i])*img->numCols ;
+        //col = y + adjR->dy[i];
+        row = x+adjR->dx[i];
+        col = y+adjR->dy[i];
+
+        if( (row<0) || (row>=img->numRows) || (col<0) || (col>=img->numCols) ){
+            v[i] = 0.0;
+        }
+        else{
+            v[i] = img->ch[ch].vecIntensity[row*img->numCols+col];
         }
     }
-    return  v;
+    return v;
 }
 
 void createCircularAdjacency(AdjRelation *adjR, float r){

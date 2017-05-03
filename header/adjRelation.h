@@ -19,7 +19,7 @@ void destroyAdjRelation(AdjRelation *adjR);
 void setAdjRelation(AdjRelation *adjR, int numberOfAdjacencies, int *xVec, int *yVec);
 void createLosangeAdjacency(AdjRelation *adjR, int s);
 void createCrossAdjacency(AdjRelation *adjR, int s);
-unsigned char * getAdjRelationValues(Image *img, AdjRelation *adjR, int x, int y);
+float * getAdjRelationValues(Image *img, AdjRelation *adjR, int x, int y, int ch);
 
 
 #endif //CLION_ADJRELATION_H

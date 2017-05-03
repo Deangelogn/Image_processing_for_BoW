@@ -177,28 +177,124 @@ CMakeFiles/Clion.dir/src/morphology.c.o.provides: CMakeFiles/Clion.dir/src/morph
 CMakeFiles/Clion.dir/src/morphology.c.o.provides.build: CMakeFiles/Clion.dir/src/morphology.c.o
 
 
-CMakeFiles/Clion.dir/src/math.c.o: CMakeFiles/Clion.dir/flags.make
-CMakeFiles/Clion.dir/src/math.c.o: ../src/math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Clion.dir/src/math.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Clion.dir/src/math.c.o   -c /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/math.c
+CMakeFiles/Clion.dir/src/myMath.c.o: CMakeFiles/Clion.dir/flags.make
+CMakeFiles/Clion.dir/src/myMath.c.o: ../src/myMath.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Clion.dir/src/myMath.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Clion.dir/src/myMath.c.o   -c /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/myMath.c
 
-CMakeFiles/Clion.dir/src/math.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Clion.dir/src/math.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/math.c > CMakeFiles/Clion.dir/src/math.c.i
+CMakeFiles/Clion.dir/src/myMath.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Clion.dir/src/myMath.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/myMath.c > CMakeFiles/Clion.dir/src/myMath.c.i
 
-CMakeFiles/Clion.dir/src/math.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Clion.dir/src/math.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/math.c -o CMakeFiles/Clion.dir/src/math.c.s
+CMakeFiles/Clion.dir/src/myMath.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Clion.dir/src/myMath.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/myMath.c -o CMakeFiles/Clion.dir/src/myMath.c.s
 
-CMakeFiles/Clion.dir/src/math.c.o.requires:
+CMakeFiles/Clion.dir/src/myMath.c.o.requires:
 
-.PHONY : CMakeFiles/Clion.dir/src/math.c.o.requires
+.PHONY : CMakeFiles/Clion.dir/src/myMath.c.o.requires
 
-CMakeFiles/Clion.dir/src/math.c.o.provides: CMakeFiles/Clion.dir/src/math.c.o.requires
-	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/math.c.o.provides.build
-.PHONY : CMakeFiles/Clion.dir/src/math.c.o.provides
+CMakeFiles/Clion.dir/src/myMath.c.o.provides: CMakeFiles/Clion.dir/src/myMath.c.o.requires
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/myMath.c.o.provides.build
+.PHONY : CMakeFiles/Clion.dir/src/myMath.c.o.provides
 
-CMakeFiles/Clion.dir/src/math.c.o.provides.build: CMakeFiles/Clion.dir/src/math.c.o
+CMakeFiles/Clion.dir/src/myMath.c.o.provides.build: CMakeFiles/Clion.dir/src/myMath.c.o
+
+
+CMakeFiles/Clion.dir/src/alg.c.o: CMakeFiles/Clion.dir/flags.make
+CMakeFiles/Clion.dir/src/alg.c.o: ../src/alg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Clion.dir/src/alg.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Clion.dir/src/alg.c.o   -c /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/alg.c
+
+CMakeFiles/Clion.dir/src/alg.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Clion.dir/src/alg.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/alg.c > CMakeFiles/Clion.dir/src/alg.c.i
+
+CMakeFiles/Clion.dir/src/alg.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Clion.dir/src/alg.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/alg.c -o CMakeFiles/Clion.dir/src/alg.c.s
+
+CMakeFiles/Clion.dir/src/alg.c.o.requires:
+
+.PHONY : CMakeFiles/Clion.dir/src/alg.c.o.requires
+
+CMakeFiles/Clion.dir/src/alg.c.o.provides: CMakeFiles/Clion.dir/src/alg.c.o.requires
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/alg.c.o.provides.build
+.PHONY : CMakeFiles/Clion.dir/src/alg.c.o.provides
+
+CMakeFiles/Clion.dir/src/alg.c.o.provides.build: CMakeFiles/Clion.dir/src/alg.c.o
+
+
+CMakeFiles/Clion.dir/src/bow.c.o: CMakeFiles/Clion.dir/flags.make
+CMakeFiles/Clion.dir/src/bow.c.o: ../src/bow.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Clion.dir/src/bow.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Clion.dir/src/bow.c.o   -c /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/bow.c
+
+CMakeFiles/Clion.dir/src/bow.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Clion.dir/src/bow.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/bow.c > CMakeFiles/Clion.dir/src/bow.c.i
+
+CMakeFiles/Clion.dir/src/bow.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Clion.dir/src/bow.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/bow.c -o CMakeFiles/Clion.dir/src/bow.c.s
+
+CMakeFiles/Clion.dir/src/bow.c.o.requires:
+
+.PHONY : CMakeFiles/Clion.dir/src/bow.c.o.requires
+
+CMakeFiles/Clion.dir/src/bow.c.o.provides: CMakeFiles/Clion.dir/src/bow.c.o.requires
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/bow.c.o.provides.build
+.PHONY : CMakeFiles/Clion.dir/src/bow.c.o.provides
+
+CMakeFiles/Clion.dir/src/bow.c.o.provides.build: CMakeFiles/Clion.dir/src/bow.c.o
+
+
+CMakeFiles/Clion.dir/src/stringManipulation.c.o: CMakeFiles/Clion.dir/flags.make
+CMakeFiles/Clion.dir/src/stringManipulation.c.o: ../src/stringManipulation.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Clion.dir/src/stringManipulation.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Clion.dir/src/stringManipulation.c.o   -c /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/stringManipulation.c
+
+CMakeFiles/Clion.dir/src/stringManipulation.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Clion.dir/src/stringManipulation.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/stringManipulation.c > CMakeFiles/Clion.dir/src/stringManipulation.c.i
+
+CMakeFiles/Clion.dir/src/stringManipulation.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Clion.dir/src/stringManipulation.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/stringManipulation.c -o CMakeFiles/Clion.dir/src/stringManipulation.c.s
+
+CMakeFiles/Clion.dir/src/stringManipulation.c.o.requires:
+
+.PHONY : CMakeFiles/Clion.dir/src/stringManipulation.c.o.requires
+
+CMakeFiles/Clion.dir/src/stringManipulation.c.o.provides: CMakeFiles/Clion.dir/src/stringManipulation.c.o.requires
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/stringManipulation.c.o.provides.build
+.PHONY : CMakeFiles/Clion.dir/src/stringManipulation.c.o.provides
+
+CMakeFiles/Clion.dir/src/stringManipulation.c.o.provides.build: CMakeFiles/Clion.dir/src/stringManipulation.c.o
+
+
+CMakeFiles/Clion.dir/src/direct.c.o: CMakeFiles/Clion.dir/flags.make
+CMakeFiles/Clion.dir/src/direct.c.o: ../src/direct.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Clion.dir/src/direct.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Clion.dir/src/direct.c.o   -c /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/direct.c
+
+CMakeFiles/Clion.dir/src/direct.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Clion.dir/src/direct.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/direct.c > CMakeFiles/Clion.dir/src/direct.c.i
+
+CMakeFiles/Clion.dir/src/direct.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Clion.dir/src/direct.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/direct.c -o CMakeFiles/Clion.dir/src/direct.c.s
+
+CMakeFiles/Clion.dir/src/direct.c.o.requires:
+
+.PHONY : CMakeFiles/Clion.dir/src/direct.c.o.requires
+
+CMakeFiles/Clion.dir/src/direct.c.o.provides: CMakeFiles/Clion.dir/src/direct.c.o.requires
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/direct.c.o.provides.build
+.PHONY : CMakeFiles/Clion.dir/src/direct.c.o.provides
+
+CMakeFiles/Clion.dir/src/direct.c.o.provides.build: CMakeFiles/Clion.dir/src/direct.c.o
 
 
 # Object files for target Clion
@@ -208,7 +304,11 @@ Clion_OBJECTS = \
 "CMakeFiles/Clion.dir/src/histogram.c.o" \
 "CMakeFiles/Clion.dir/src/adjRelation.c.o" \
 "CMakeFiles/Clion.dir/src/morphology.c.o" \
-"CMakeFiles/Clion.dir/src/math.c.o"
+"CMakeFiles/Clion.dir/src/myMath.c.o" \
+"CMakeFiles/Clion.dir/src/alg.c.o" \
+"CMakeFiles/Clion.dir/src/bow.c.o" \
+"CMakeFiles/Clion.dir/src/stringManipulation.c.o" \
+"CMakeFiles/Clion.dir/src/direct.c.o"
 
 # External object files for target Clion
 Clion_EXTERNAL_OBJECTS =
@@ -218,10 +318,14 @@ Clion: CMakeFiles/Clion.dir/src/image.c.o
 Clion: CMakeFiles/Clion.dir/src/histogram.c.o
 Clion: CMakeFiles/Clion.dir/src/adjRelation.c.o
 Clion: CMakeFiles/Clion.dir/src/morphology.c.o
-Clion: CMakeFiles/Clion.dir/src/math.c.o
+Clion: CMakeFiles/Clion.dir/src/myMath.c.o
+Clion: CMakeFiles/Clion.dir/src/alg.c.o
+Clion: CMakeFiles/Clion.dir/src/bow.c.o
+Clion: CMakeFiles/Clion.dir/src/stringManipulation.c.o
+Clion: CMakeFiles/Clion.dir/src/direct.c.o
 Clion: CMakeFiles/Clion.dir/build.make
 Clion: CMakeFiles/Clion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable Clion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable Clion"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Clion.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -234,7 +338,11 @@ CMakeFiles/Clion.dir/requires: CMakeFiles/Clion.dir/src/image.c.o.requires
 CMakeFiles/Clion.dir/requires: CMakeFiles/Clion.dir/src/histogram.c.o.requires
 CMakeFiles/Clion.dir/requires: CMakeFiles/Clion.dir/src/adjRelation.c.o.requires
 CMakeFiles/Clion.dir/requires: CMakeFiles/Clion.dir/src/morphology.c.o.requires
-CMakeFiles/Clion.dir/requires: CMakeFiles/Clion.dir/src/math.c.o.requires
+CMakeFiles/Clion.dir/requires: CMakeFiles/Clion.dir/src/myMath.c.o.requires
+CMakeFiles/Clion.dir/requires: CMakeFiles/Clion.dir/src/alg.c.o.requires
+CMakeFiles/Clion.dir/requires: CMakeFiles/Clion.dir/src/bow.c.o.requires
+CMakeFiles/Clion.dir/requires: CMakeFiles/Clion.dir/src/stringManipulation.c.o.requires
+CMakeFiles/Clion.dir/requires: CMakeFiles/Clion.dir/src/direct.c.o.requires
 
 .PHONY : CMakeFiles/Clion.dir/requires
 
