@@ -74,14 +74,14 @@ void createDataSet(char sourceDir[], char targetDir[], int ID, float percentTrai
         while ((ent = readdir (dir)) != NULL) {
             if( !((strcmp(ent->d_name,".")==0) || (strcmp(ent->d_name,"..")==0)) ){
                 if(testSample==0){
-                    char *srcFile = strAppend(sourceDir,"/");
+                    char *srcFile = strAppend(sourceDir, "/");
                     char *tarFile = strAppend(dir1,"/");
                     srcFile = strAppend(srcFile,ent->d_name);
                     tarFile = strAppend(tarFile,ent->d_name);
                     copyImg(srcFile,tarFile);
                     continue;
                 } else if(trainSample==0){
-                    char *srcFile = strAppend(sourceDir,"/");
+                    char *srcFile = strAppend(sourceDir, "/");
                     char *tarFile = strAppend(dir2,"/");
                     srcFile = strAppend(srcFile,ent->d_name);
                     tarFile = strAppend(tarFile,ent->d_name);
@@ -96,7 +96,7 @@ void createDataSet(char sourceDir[], char targetDir[], int ID, float percentTrai
                     trainSample -= 1;
                     continue;
                 } else{
-                    char *srcFile = strAppend(sourceDir,"/");
+                    char *srcFile = strAppend(sourceDir, "/");
                     char *tarFile = strAppend(dir2,"/");
                     srcFile = strAppend(srcFile,ent->d_name);
                     tarFile = strAppend(tarFile,ent->d_name);
@@ -111,4 +111,32 @@ void createDataSet(char sourceDir[], char targetDir[], int ID, float percentTrai
         perror ("ERROR");
     }
 
+}
+
+void createDatasetFrom(int *pInt, int numClasses, char *srcDir, char *tarDir,int ID, float percentTrainSample){
+    char *folderName;
+    char *fullPath;
+    for (int i = 0; i < numClasses; ++i) {
+        folderName = strAppend("obj",num2str(pInt[i],3));
+        fullPath = strAppend(srcDir,folderName);
+        createDataSet(fullPath, tarDir, ID, percentTrainSample);
+    }
+}
+
+void saveDatasetInfo(int *pInt,int nClasses, int spc, int ID, float percentTrainSample, char *pathDir){
+    char *str;
+    sprintf(str,"datasetInfo_ID%d.txt", ID);
+    str = strAppend(pathDir,str);
+    FILE *f = fopen(str,"w");
+
+    fprintf(f, "Dataset ID: %d\n",ID);
+    fprintf(f, "total samples: %d\n",(int)round(nClasses*spc));
+    fprintf(f, "num train samples: %d\n",(int)round(nClasses*spc*percentTrainSample));
+    fprintf(f, "num test samples: %d\n",(int)round(nClasses*spc*(1-percentTrainSample)));
+    fprintf(f, "Classes: ");
+    for (int i = 0; i < nClasses-1; ++i) {
+        fprintf(f, "%d, ",pInt[i]);
+    }
+    fprintf(f, "%d.", pInt[nClasses-1]);
+    fclose(f);
 }

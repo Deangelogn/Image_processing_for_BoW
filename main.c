@@ -18,19 +18,16 @@ int main(int   argc, char *argv[])
     char path[]="/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/classes";
     Image rgbImg, *imgPile;
 
-    //readImage("/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/classes/obj001/obj1__0.ppm", &rgbImg);
-    //saveP6Image(&rgbImg,"/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/test_set1/obj1__0.ppm");
-    //char *str1 = "/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/classes/obj001/obj1__0.ppm";
-    //char *str2 = "/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/test_set1/obj1__0.ppm";
-    //copyImg(str1,str2);
 
-    //createDir("/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/training_set");
-    //int numF = numFiles("/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/classes/obj047");
-    /*createDataSet("/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/classes/obj001",
-                  "/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/",
-                   1, 0.84);*/
+    //create random training and test datasets from coil database
+    //uncomment this part if you wish to generate a dataset
+    /*int *pInt = randInt(10,5), ID = 1;
+    float per = 0.84;
+    char *srcDir = "/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/classes/";
+    char *tarDir = "/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/";
+    createDatasetFrom(pInt,5, srcDir, tarDir, ID, per);
+    saveDatasetInfo(pInt,5,72,ID,per,"/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/");*/
 
-    //printf("numFiles: %d", numF);
     /*int pileSize=0;
     AdjRelation adjRelation;
     readImage("/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/obj6__0.ppm", &rgbImg[0]);

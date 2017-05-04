@@ -27,4 +27,6 @@ double myFloor(double num);
 double myCeil(double num);
 void *vecMerge(float *vec1, float *vec2, int size1,int size2, FeatureVector *mergeVec);
 void fv2array(FeatureVector *fv,float *vecOut, int vecSize);
+int *randInt(int maxValue, int numElements);
+
 #endif //CLION_MATH_H

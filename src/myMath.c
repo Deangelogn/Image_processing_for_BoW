@@ -8,6 +8,8 @@
 #include "../header/myMath.h"
 #include "../header/morphology.h"
 #include <stdio.h>
+#include <time.h>
+
 double round(double num){
     int integer =  (int)num;
     if(num-integer>0.5){
@@ -183,10 +185,25 @@ void fv2array(FeatureVector *fv,float *vecOut, int vecSize){
     }
 }
 
-int *randInt(int numElements){
-    int *pInt = malloc(numElements*sizeof(int));
-    for (int i = 0; i < numElements; ++i) {
-        
+int *randInt(int maxValue, int numElements){
+    int *pInt = malloc(maxValue*sizeof(int));
+    int *pOut = malloc(numElements*sizeof(int));
+    for (int i = 0; i < maxValue; ++i) {
+        pInt[i]=i+1;
     }
 
+    int aux;
+    srand( time(NULL) );
+    for (int i = 0; i < maxValue; i++) {    // shuffle array
+        aux = pInt[i];
+        int randIdx = rand() % numElements;
+        pInt[i]  = pInt[randIdx];
+        pInt[randIdx] = aux;
+    }
+
+    for (int i = 0; i < numElements; ++i) {
+        pOut[i] = pInt[i];
+    }
+
+    return pOut;
 }

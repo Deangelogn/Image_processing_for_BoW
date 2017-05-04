@@ -12,50 +12,92 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3963bc0e-8f7d-450c-ab7a-08438c38ef3e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/header/alg.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/header/bow.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/header/direct.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/header/myMath.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/header/stringManipulation.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/alg.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bow.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/direct.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/myMath.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/stringManipulation.c" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/math.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/header/math.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/math.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj1__110.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj1__130.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj1__170.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj1__180.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj1__195.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj1__265.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj1__270.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj1__275.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj1__290.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj1__330.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj1__345.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj1__50.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__0.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__10.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__100.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__105.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__115.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__120.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__125.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__135.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__140.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__145.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__15.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__150.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__155.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__160.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__165.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__175.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__185.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__190.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__20.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__200.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__205.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__210.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__215.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__220.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__225.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__230.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__235.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__240.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__245.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__25.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__250.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__255.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__260.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__280.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__285.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__295.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__30.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__300.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__305.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__310.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__315.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__320.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__325.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__335.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__340.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__35.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__350.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__355.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__40.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__45.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__5.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__55.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__60.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__65.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__70.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__75.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__80.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__85.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__90.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj1__95.ppm" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/main.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/main.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/adjRelation.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/adjRelation.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/histogram.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/histogram.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/image.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/image.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/morphology.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/morphology.c.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/direct.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/direct.c.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/myMath.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/myMath.c.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/stringManipulation.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/stringManipulation.c.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Clion" afterPath="$PROJECT_DIR$/cmake-build-debug/Clion" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/C.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/C.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/cmake_clean.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/link.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/MO815_BoW.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/MO815_BoW.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header/adjRelation.h" afterPath="$PROJECT_DIR$/header/adjRelation.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header/histogram.h" afterPath="$PROJECT_DIR$/header/histogram.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header/image.h" afterPath="$PROJECT_DIR$/header/image.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header/morphology.h" afterPath="$PROJECT_DIR$/header/morphology.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header/direct.h" afterPath="$PROJECT_DIR$/header/direct.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header/myMath.h" afterPath="$PROJECT_DIR$/header/myMath.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header/stringManipulation.h" afterPath="$PROJECT_DIR$/header/stringManipulation.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.c" afterPath="$PROJECT_DIR$/main.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/adjRelation.c" afterPath="$PROJECT_DIR$/src/adjRelation.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/histogram.c" afterPath="$PROJECT_DIR$/src/histogram.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/image.c" afterPath="$PROJECT_DIR$/src/image.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/morphology.c" afterPath="$PROJECT_DIR$/src/morphology.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/direct.c" afterPath="$PROJECT_DIR$/src/direct.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/myMath.c" afterPath="$PROJECT_DIR$/src/myMath.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stringManipulation.c" afterPath="$PROJECT_DIR$/src/stringManipulation.c" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,11 +110,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.c" pinned="true" current-in-tab="false">
+      <file leaf-file-name="main.c" pinned="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+            <state relative-caret-position="216">
+              <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -80,21 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/header/image.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="direct.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/direct.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1356">
-              <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+            <state relative-caret-position="172">
+              <caret line="129" column="4" lean-forward="false" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="4" />
               <folding>
                 <element signature="e#36#65#0" expanded="true" />
               </folding>
@@ -102,44 +134,74 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="direct.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/header/direct.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myMath.c" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/myMath.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="188" column="8" lean-forward="false" selection-start-line="188" selection-start-column="8" selection-end-line="188" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="image.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/image.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="289" column="0" lean-forward="false" selection-start-line="289" selection-start-column="0" selection-end-line="289" selection-end-column="0" />
+            <state relative-caret-position="139">
+              <caret line="238" column="80" lean-forward="false" selection-start-line="238" selection-start-column="4" selection-end-line="238" selection-end-column="80" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alg.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/alg.c">
+      <file leaf-file-name="image.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/header/image.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="24" column="46" lean-forward="false" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stringManipulation.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stringManipulation.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stringManipulation.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/header/stringManipulation.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="52" />
+              <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="direct.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/header/direct.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myMath.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/myMath.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
               <folding>
-                <element signature="e#36#55#0" expanded="true" />
+                <element signature="e#63#82#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myMath.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/header/myMath.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -166,18 +228,18 @@
         <option value="$PROJECT_DIR$/header/histogram.h" />
         <option value="$PROJECT_DIR$/src/morphology.c" />
         <option value="$PROJECT_DIR$/header/morphology.h" />
-        <option value="$PROJECT_DIR$/header/myMath.h" />
         <option value="$PROJECT_DIR$/header/alg.h" />
         <option value="$PROJECT_DIR$/src/alg.c" />
         <option value="$PROJECT_DIR$/src/histogram.c" />
-        <option value="$PROJECT_DIR$/header/direct.h" />
-        <option value="$PROJECT_DIR$/src/stringManipulation.c" />
-        <option value="$PROJECT_DIR$/header/stringManipulation.h" />
         <option value="$PROJECT_DIR$/src/image.c" />
         <option value="$PROJECT_DIR$/header/image.h" />
+        <option value="$PROJECT_DIR$/header/myMath.h" />
+        <option value="$PROJECT_DIR$/header/stringManipulation.h" />
+        <option value="$PROJECT_DIR$/src/stringManipulation.c" />
+        <option value="$PROJECT_DIR$/src/myMath.c" />
+        <option value="$PROJECT_DIR$/header/direct.h" />
         <option value="$PROJECT_DIR$/src/direct.c" />
         <option value="$PROJECT_DIR$/main.c" />
-        <option value="$PROJECT_DIR$/src/myMath.c" />
       </list>
     </option>
   </component>
@@ -514,12 +576,14 @@
       <workItem from="1493389201022" duration="15526000" />
       <workItem from="1493771705444" duration="7000" />
       <workItem from="1493823806494" duration="11646000" />
-      <workItem from="1493839583615" duration="2894000" />
+      <workItem from="1493839583615" duration="6664000" />
+      <workItem from="1493851507615" duration="6403000" />
+      <workItem from="1493914189708" duration="5467000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108159000" />
+    <option name="totallyTimeSpent" value="123799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
@@ -529,14 +593,14 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32735425" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32735425" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910313" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39760837" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -577,7 +641,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="38" />
+      <option name="time" value="43" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -855,7 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -863,22 +926,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alg.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="e#36#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/header/myMath.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="12" />
+        <state relative-caret-position="558">
+          <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/image.c">
+    <entry file="file://$PROJECT_DIR$/header/stringManipulation.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="289" column="0" lean-forward="false" selection-start-line="289" selection-start-column="0" selection-end-line="289" selection-end-column="0" />
+        <state relative-caret-position="162">
+          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header/image.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="46" lean-forward="false" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -886,41 +966,41 @@
     <entry file="file://$PROJECT_DIR$/src/stringManipulation.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myMath.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
           <folding>
-            <element signature="e#37#55#0" expanded="false" />
+            <element signature="e#63#82#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header/stringManipulation.h">
+    <entry file="file://$PROJECT_DIR$/src/image.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        <state relative-caret-position="139">
+          <caret line="238" column="80" lean-forward="false" selection-start-line="238" selection-start-column="4" selection-end-line="238" selection-end-column="80" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/header/direct.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header/image.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        <state relative-caret-position="198">
+          <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/direct.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1356">
-          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+        <state relative-caret-position="172">
+          <caret line="129" column="4" lean-forward="false" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="4" />
           <folding>
             <element signature="e#36#65#0" expanded="true" />
           </folding>
@@ -929,29 +1009,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        <state relative-caret-position="216">
+          <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alg.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="52" />
-          <folding>
-            <element signature="e#36#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myMath.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="188" column="8" lean-forward="false" selection-start-line="188" selection-start-column="8" selection-end-line="188" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>

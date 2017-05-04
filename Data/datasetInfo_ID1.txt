@@ -1,0 +1,5 @@
+Dataset ID: 1
+total samples: 360
+num train samples: 302
+num test samples: 58
+Classes: 9, 5, 4, 10, 7.

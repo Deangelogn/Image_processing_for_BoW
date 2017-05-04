@@ -23,3 +23,17 @@ char* strAppend(const char* a, const char* b){
     char *ret = (char*)malloc(len * sizeof(char) + 1);
     return strcat(strcpy(ret, a) ,b);
 }
+
+char* num2str(int num, int digitis){
+    char *str=malloc(digitis+1);
+    sprintf(str,"%d",num);
+    int dec = 10;
+    for (int i = 1; i < digitis; ++i) {
+        if(num<dec){
+            str = strAppend("0",str);
+        }
+        dec *= 10;
+    }
+    return str;
+    //}
+}

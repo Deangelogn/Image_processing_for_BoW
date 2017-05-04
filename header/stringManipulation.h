@@ -7,5 +7,6 @@
 
 double getNumber(char *str);
 char* strAppend(const char* a, const char* b);
+char* num2str(int num, int digitis);
 
 #endif //MO815_BOW_STRINGMANIPULATION_H
