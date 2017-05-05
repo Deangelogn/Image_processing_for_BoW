@@ -19,11 +19,11 @@ int main(int   argc, char *argv[])
     Image *imgPile, *cropImgPile;
     int bins[3]={2,2,2}; //histogram bins
     float begin=1, end=3, step=1; //Granulometry parameters
-
+    int numClasses=2;
 
     //create random training and test datasets from coil database
     //uncomment this part if you wish to generate a dataset
-    /*int numClasses=2;
+    /*
     int *pInt = randInt(10,numClasses), ID = 3;
     float per = 0.84;
     char *srcDir = "/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/classes/";
@@ -51,6 +51,14 @@ int main(int   argc, char *argv[])
         vecMerge (histPile[i].normBins, granulometryFeatures, histPile[i].numBins, numFeatures, &fv[i]);
     }
 
+    for (int k = 0; k < numCropImg; ++k) {
+        printf("%d: ", k);
+        for (int i = 0; i < fv[k].size; ++i) {
+            printf(" %f, ", fv[k].features[i]);
+        }
+        printf("\n");
+    }
+
     //Create dictonary
     FeatureVector *vw;
     vw = kmeans(&fv, numCropImg, numWords, it);
@@ -62,28 +70,52 @@ int main(int   argc, char *argv[])
 
     // ----- part 2 -------
     int dictonarySize;
-    char filename[100];
-    sprintf(filename, "/home/eu/Desktop/C_C++/Image_processing_for_BoW/dictonary/dic_%d.txt", run);
+    char fileRead[100];
+    sprintf(fileRead, "/home/eu/Desktop/C_C++/Image_processing_for_BoW/dictonary/dic_%d.txt", run);
 
-    FeatureVector *dic = importDictonary(filename, &dictonarySize);
+    FeatureVector *dic = importDictonary(fileRead, &dictonarySize);
 
-    getBowFeatures(imgPile, numImg, dic , dictonarySize);
-
-
-    for (int j = 0; j < numImg; ++j) {
-        destroyImage(&imgPile[j]);
+    FeatureVector *histWord = getBowFeatures(imgPile, numImg, dic , dictonarySize);
+    /*FeatureVector fv2[numImg];
+    for (int i = 0; i < numImg; ++i) {
+       setFeatureVector(&fv2[i],histWord[i].size);
+        for (int j = 0; j < histWord[i].size; ++j) {
+            fv2[i].features[j] = histWord[i].features[j];
+        }
     }
-    for (int j = 0; j < numCropImg; ++j) {
-        destroyImage(&cropImgPile[j]);
-    }
+
+    FeatureVector *cl = kmeans(&fv2, numImg, numClasses, it);
+
+    char fileSave2[100];
+    sprintf(fileSave2, "/home/eu/Desktop/C_C++/Image_processing_for_BoW/dictonary/clk_%d.txt", run);
+    saveFV(fileSave2,cl,numClasses);*/
 
 
-    /*
-    for (int j = 0; j < numCropImg; ++j) {
-        destroyHistogram(&histPile[j]);
-        destroyFeatureVector(&fv[j]);
+
+    /*for (int i = 0; i < kSize; ++i) {
+        int idx = findVisualWords(&kel[i],histWord,numImg);
+        printf("%d\n", idx);
     }*/
 
+    // ----- part 3 -------
+
+    int kSize;
+    char fileRead2[100];
+    sprintf(fileRead2, "/home/eu/Desktop/C_C++/Image_processing_for_BoW/dictonary/clk_%d.txt", run);
+    FeatureVector *kel = importDictonary(fileRead2, &kSize);
+
+    char *testDir = "/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/test_set3/";
+
+    float acc = classifier(datasetDir, testDir, dic, dictonarySize, kel, kSize, histWord, numImg);
+    printf("acc: %f", acc);
+
+
+    for (int j = 0; j < numImg; ++j){
+        destroyImage(&imgPile[j]);
+    }
+    for (int j = 0; j < numCropImg; ++j){
+        destroyImage(&cropImgPile[j]);
+    }
 
     return 0;
 }

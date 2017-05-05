@@ -356,7 +356,6 @@ void getSubImage (Image *img, Image *subImg, int rowB, int rowE, int colB, int c
 Image *cropImage(Image *vecImg, int numImgs, int cutX, int cutY,int *pileSize){
     int numSubImg = 0, ik=0, rowE, colE;
     Image *cropPile;
-    saveP6Image(&vecImg[250],"/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/teste1.ppm");
     for (int l = 0; l < numImgs; ++l) {
         numSubImg += myCeil(vecImg[l].numRows/cutX) + myCeil(vecImg[l].numRows/cutY);
     }

@@ -101,8 +101,18 @@ printf.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/histogram.h
 ../header/myMath.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/myMath.h
+../header/alg.h
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/alg.h
+../header/stringManipulation.h
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/stringManipulation.h
 stdio.h
 -
+dirent.h
+-
+memory.h
+-
+../header/bow.h
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/bow.h
 
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/direct.c
 ../header/direct.h

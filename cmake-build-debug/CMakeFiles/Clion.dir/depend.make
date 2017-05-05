@@ -26,10 +26,13 @@ CMakeFiles/Clion.dir/src/alg.c.o: ../header/myMath.h
 CMakeFiles/Clion.dir/src/alg.c.o: ../src/alg.c
 
 CMakeFiles/Clion.dir/src/bow.c.o: ../header/adjRelation.h
+CMakeFiles/Clion.dir/src/bow.c.o: ../header/alg.h
+CMakeFiles/Clion.dir/src/bow.c.o: ../header/bow.h
 CMakeFiles/Clion.dir/src/bow.c.o: ../header/histogram.h
 CMakeFiles/Clion.dir/src/bow.c.o: ../header/image.h
 CMakeFiles/Clion.dir/src/bow.c.o: ../header/morphology.h
 CMakeFiles/Clion.dir/src/bow.c.o: ../header/myMath.h
+CMakeFiles/Clion.dir/src/bow.c.o: ../header/stringManipulation.h
 CMakeFiles/Clion.dir/src/bow.c.o: ../src/bow.c
 
 CMakeFiles/Clion.dir/src/direct.c.o: ../header/adjRelation.h

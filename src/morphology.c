@@ -109,6 +109,7 @@ double distFV(FeatureVector *fv1, FeatureVector *fv2){
 void sumFV(FeatureVector * fv1, FeatureVector *fv2){
     for (int i = 0; i < fv1->size; ++i) {
         fv1->features[i] += fv2->features[i];
+    //    printf("v1: %f, v2: %f\n",fv1->features[i], fv2->features[i]);
     }
 }
 

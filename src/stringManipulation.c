@@ -9,9 +9,14 @@
 
 double getNumber(char *str){
     double result=0;
+    int logicVar;
     while (*str){
         if(*str>='0' && *str<='9') {
             result = result * 10 + (*str - '0');
+            logicVar = 1;
+        }
+        else if(logicVar==1){
+            break;
         }
         str++;
     }
