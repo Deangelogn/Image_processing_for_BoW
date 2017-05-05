@@ -14,7 +14,13 @@
 morphology.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/morphology.h
 
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/bow.h
+morphology.h
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/morphology.h
+
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/direct.h
+image.h
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/image.h
 
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/histogram.h
 image.h
@@ -55,6 +61,8 @@ header/stringManipulation.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/stringManipulation.h
 header/direct.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/direct.h
+header/bow.h
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/bow.h
 dirent.h
 -
 
@@ -83,6 +91,18 @@ time.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/alg.h
 
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/bow.c
+stdlib.h
+-
+printf.h
+-
+../header/morphology.h
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/morphology.h
+../header/histogram.h
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/histogram.h
+../header/myMath.h
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/myMath.h
+stdio.h
+-
 
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/direct.c
 ../header/direct.h

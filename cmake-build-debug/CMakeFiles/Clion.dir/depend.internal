@@ -4,6 +4,7 @@
 CMakeFiles/Clion.dir/main.c.o
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/adjRelation.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/alg.h
+ /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/bow.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/direct.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/histogram.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/image.h
@@ -25,6 +26,11 @@ CMakeFiles/Clion.dir/src/alg.c.o
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/myMath.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/alg.c
 CMakeFiles/Clion.dir/src/bow.c.o
+ /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/adjRelation.h
+ /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/histogram.h
+ /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/image.h
+ /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/morphology.h
+ /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/myMath.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/bow.c
 CMakeFiles/Clion.dir/src/direct.c.o
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/adjRelation.h

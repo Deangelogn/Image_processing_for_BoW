@@ -8,7 +8,7 @@
 #include "../header/alg.h"
 
 
-void kmeans(float *featMat,int numObjs , int numKernels,int vecSize,int it,char outputFile[]){
+/*FeatureVector* kmeans(FeatureVector *featMat,int numObjs , int numKernels,int it){
     int kernelElements = numKernels*vecSize;
     float* kernels = malloc(kernelElements*sizeof(float));
     float* totalSum = malloc(kernelElements*sizeof(float));
@@ -63,7 +63,7 @@ void kmeans(float *featMat,int numObjs , int numKernels,int vecSize,int it,char 
     }
 
     fclose(fp);
-}
+}*/
 
 float * getSubVec(float *vec, int size, int begin){
     float *p = malloc(size*sizeof(float));
@@ -73,21 +73,20 @@ float * getSubVec(float *vec, int size, int begin){
     return p;
 }
 
-int closestVec(float *vec, float *matVec, int vecSize, int numVec){
+int closestVec(FeatureVector *vecFV, FeatureVector *matFV, int matElem){
 
-    int k=vecSize, idx=0;
+    int idx=0;
     float *subVec, dist;
-    subVec = getSubVec(matVec,vecSize,0);
-    float minDist = twoPointsDist(vec, subVec, vecSize);
+    float minDist = distFV(vecFV, &matFV[0]);//twoPointsDist(vec, subVec, vecSize);
 
-    for (int i = 1; i < numVec; ++i){
-        subVec = getSubVec(matVec,vecSize,k);
-        dist = twoPointsDist(vec, subVec, vecSize);
+
+    for (int i = 1; i <matElem ; ++i){
+        dist = distFV(vecFV, &matFV[i]);
         if (dist < minDist){
             minDist = dist;
             idx = i;
+
         }
-        k += vecSize;
     }
     return idx;
 }
@@ -95,6 +94,12 @@ int closestVec(float *vec, float *matVec, int vecSize, int numVec){
 void zeroStart(int *p, int vecSize){
     for (int i = 0; i < vecSize; ++i) {
         p[i] = 0;
+    }
+}
+
+void zeroFV(FeatureVector *fv){
+    for (int i = 0; i < fv->size; ++i) {
+        fv->features[i] = 0;
     }
 }
 
@@ -116,5 +121,73 @@ void getDictonary(char filename[], FeatureVector* fv){
             fscanf(f,"%f",&fv[i].features[j]);
         }
     }
+}
+
+FeatureVector* kmeans(FeatureVector *featMat,int numObjs, int numKernels,int it){
+    FeatureVector *kernel = malloc(numKernels * sizeof(FeatureVector));
+    FeatureVector kernelCont, kernelError, kernelNew[numKernels];
+
+
+    double erGoal = 0.0000000000000001;
+    int count=0, idx;
+
+    setFeatureVector(&kernelError,numKernels);
+    setFeatureVector(&kernelCont,numKernels);
+
+    srand( time(NULL) );
+    for (int i = 0; i < numKernels; ++i) {
+        kernel[i].features = malloc(featMat[0].size*sizeof(float));
+        kernel[i].size = featMat[0].size;
+        setFeatureVector(&kernelNew[i],featMat[0].size);
+        for (int j = 0; j < kernel[i].size; ++j) {
+            kernel[i].features[j] = (float)rand()/(float)(RAND_MAX);
+        }
+    }
+
+    /*for (int j = 0; j < numKernels; ++j) {
+        printf("%d: ", j+1);
+        for (int i = 0; i < kernel[j].size; ++i) {
+            printf("%f, ", kernel[j].features[i]);
+        }
+        printf("\n");
+    }*/
+
+    while(count<=it){
+        zeroFV(&kernelCont);
+        zeroFV(&kernelError);
+
+        for (int j = 0; j < numKernels; ++j) {
+            zeroFV(&kernelNew[j]);
+        }
+
+
+
+        for (int i = 0; i < numObjs; ++i){
+            int idx = closestVec(&featMat[i],kernel,numKernels);
+            kernelCont.features[idx] += 1;
+            sumFV(&kernelNew[idx],&featMat[i]);
+        }
+
+        for (int j = 0; j < numKernels; ++j) {
+            for (int i = 0; i < kernelNew[j].size; ++i) {
+                kernelNew[j].features[i] += (kernel[j].features[i]);
+                kernelNew[j].features[i] /= (kernelCont.features[j]+1);
+            }
+            kernelError.features[j] = distFV(&kernel[j], &kernelNew[j]);
+        }
+
+        if(maxValueFV(&kernelError)<=erGoal){
+            break;
+        }
+
+        for (int i = 0; i < numKernels; ++i) {
+                copyFV(&kernelNew[i], &kernel[i]) ;
+        }
+
+        count++;
+
+    }
+
+    return kernel;
 }
 

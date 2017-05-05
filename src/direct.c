@@ -124,19 +124,51 @@ void createDatasetFrom(int *pInt, int numClasses, char *srcDir, char *tarDir,int
 }
 
 void saveDatasetInfo(int *pInt,int nClasses, int spc, int ID, float percentTrainSample, char *pathDir){
-    char *str;
-    sprintf(str,"datasetInfo_ID%d.txt", ID);
-    str = strAppend(pathDir,str);
+    char strAux[25], *str;
+    sprintf(strAux,"datasetInfo_ID%d.txt", ID);
+    str = strAppend(pathDir,strAux);
     FILE *f = fopen(str,"w");
 
     fprintf(f, "Dataset ID: %d\n",ID);
     fprintf(f, "total samples: %d\n",(int)round(nClasses*spc));
-    fprintf(f, "num train samples: %d\n",(int)round(nClasses*spc*percentTrainSample));
-    fprintf(f, "num test samples: %d\n",(int)round(nClasses*spc*(1-percentTrainSample)));
+    fprintf(f, "num train samples: %d\n",(int)(nClasses*round(spc*percentTrainSample)));
+    fprintf(f, "num test samples: %d\n",(int)(nClasses*round(spc*(1-percentTrainSample))));
     fprintf(f, "Classes: ");
     for (int i = 0; i < nClasses-1; ++i) {
         fprintf(f, "%d, ",pInt[i]);
     }
     fprintf(f, "%d.", pInt[nClasses-1]);
     fclose(f);
+}
+
+Image *getImagesFrom(char *path, int *numImg){
+    char *imgFullPath;
+    *numImg = numFiles(path);
+    int nI = *numImg;
+    Image img[*numImg], *pileImg;
+    pileImg = malloc(nI*sizeof(Image));
+    int k=0;
+
+    DIR *dir;
+    struct dirent *ent;
+
+    dir = opendir(path);
+
+    if (dir != NULL) {
+        while ((ent = readdir (dir)) != NULL) {
+            if( !((strcmp(ent->d_name,".")==0) || (strcmp(ent->d_name,"..")==0)) ){
+                imgFullPath = strAppend(path,ent->d_name);
+                //printf("%d: %s\n",k, imgFullPath);
+                readImage(imgFullPath, &pileImg[k]);
+                saveP6Image(&pileImg[k],"/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/teste1.ppm");
+                k++;
+            }
+        }
+        closedir (dir);
+    }
+    else{
+        perror ("");
+        return EXIT_FAILURE;
+    }
+    return pileImg;
 }

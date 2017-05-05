@@ -8,70 +8,82 @@
 #include "header/morphology.h"
 #include "header/stringManipulation.h"
 #include "header/direct.h"
+#include "header/bow.h"
 
 #include <dirent.h>
 int main(int   argc, char *argv[])
 {
+    // ----- part 1 -------
     int numWords = 3, it = 10000, run=1;
-    int numImg=0;
-    char filename[100];
-    char path[]="/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/classes";
-    Image rgbImg, *imgPile;
+    int numImg=0, numCropImg=0;
+    Image *imgPile, *cropImgPile;
+    int bins[3]={2,2,2}; //histogram bins
+    float begin=1, end=3, step=1; //Granulometry parameters
 
 
     //create random training and test datasets from coil database
     //uncomment this part if you wish to generate a dataset
-    /*int *pInt = randInt(10,5), ID = 1;
+    /*int numClasses=2;
+    int *pInt = randInt(10,numClasses), ID = 3;
     float per = 0.84;
     char *srcDir = "/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/classes/";
     char *tarDir = "/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/";
-    createDatasetFrom(pInt,5, srcDir, tarDir, ID, per);
-    saveDatasetInfo(pInt,5,72,ID,per,"/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/");*/
+    createDatasetFrom(pInt,numClasses, srcDir, tarDir, ID, per);
+    saveDatasetInfo(pInt,numClasses,72,ID,per,"/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/");
+    */
 
-    /*int pileSize=0;
-    AdjRelation adjRelation;
-    readImage("/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/obj6__0.ppm", &rgbImg[0]);
-    readImage("/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/obj7__0.ppm", &rgbImg[1]);
-    readImage("/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/obj8__0.ppm", &rgbImg[2]);
-    imgPile = cropImage(&rgbImg, 3, 64,64, &pileSize);
+    // Create a pile of images
+    char *datasetDir = "/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/training_set3/";
+    imgPile = getImagesFrom(datasetDir,&numImg);
+    cropImgPile = cropImage(imgPile, numImg, 64,64, &numCropImg);
 
-    Histogram histPile[pileSize];
-    FeatureVector fv[pileSize];
-    int bins[3]={2,2,2};
-    for (int i = 0; i < pileSize; ++i) {
-        getRGBHistogram(&imgPile[i],&histPile[i], &bins);
+    //histogram features
+    /*Histogram histPile[numCropImg];
+    for (int i = 0; i < numCropImg; ++i) {
+        getRGBHistogram(&cropImgPile[i],&histPile[i], &bins);
     }
 
-    float begin=0, end=2, step=1;
+    //Granulometry features
+    FeatureVector fv[numCropImg];
     int numFeatures = (int)((end-begin)/step)+1;
-    for (int i = 0; i < pileSize; ++i) {
-        float *granulometryFeatures = getGranulometry(&imgPile[i], begin, end,step);
+    for (int i = 0; i < numCropImg; ++i) {
+        float *granulometryFeatures = getGranulometry(&cropImgPile[i], begin, end,step);
         vecMerge (histPile[i].normBins, granulometryFeatures, histPile[i].numBins, numFeatures, &fv[i]);
     }
 
-    float featMat[pileSize*fv->size];
-    fv2array(&fv, &featMat, pileSize);
+    //Create dictonary
+    FeatureVector *vw;
+    vw = kmeans(&fv, numCropImg, numWords, it);
 
-    char dir[100];
-    sprintf(dir, "/home/eu/Desktop/C_C++/Image_processing_for_BoW/dictonary/dic_%d.txt", run);
+    char filename[100];
+    sprintf(filename, "/home/eu/Desktop/C_C++/Image_processing_for_BoW/dictonary/dic_%d.txt", run);
 
-    //kmeans(featMat, pileSize, numWords, fv->size, it, dir);
+    saveFV(filename,vw,numWords);*/
 
-    FeatureVector fv2[numWords];
-    getDictonary(dir, &fv2);
-    float wordMat[numWords*fv2->size];
-    fv2array(&fv2, &wordMat, numWords);
+    // ----- part 2 -------
+    int dictonarySize;
+    char filename[100];
+    sprintf(filename, "/home/eu/Desktop/C_C++/Image_processing_for_BoW/dictonary/dic_%d.txt", run);
 
-    //fv, pileSize, vecSize, 3, hist
+    FeatureVector *dic = importDictonary(filename, &dictonarySize);
 
-    for (int i = 0; i < pileSize; ++i) {
-        destroyImage(&imgPile[i]);
-        destroyHistogram(&histPile[i]);
-        destroyFeatureVector(&fv[i]);
+    getBowFeatures(imgPile, numImg, dic , dictonarySize);
+
+
+    for (int j = 0; j < numImg; ++j) {
+        destroyImage(&imgPile[j]);
+    }
+    for (int j = 0; j < numCropImg; ++j) {
+        destroyImage(&cropImgPile[j]);
     }
 
-    for (int j = 0; j < numWords; ++j) {
-        destroyFeatureVector(&fv2[j]);
+
+    /*
+    for (int j = 0; j < numCropImg; ++j) {
+        destroyHistogram(&histPile[j]);
+        destroyFeatureVector(&fv[j]);
     }*/
+
+
     return 0;
 }
