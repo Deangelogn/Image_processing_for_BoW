@@ -150,33 +150,6 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/main.c.s
 .PHONY : main.c.s
 
-src/ImagePile.o: src/ImagePile.c.o
-
-.PHONY : src/ImagePile.o
-
-# target to build an object file
-src/ImagePile.c.o:
-	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/ImagePile.c.o
-.PHONY : src/ImagePile.c.o
-
-src/ImagePile.i: src/ImagePile.c.i
-
-.PHONY : src/ImagePile.i
-
-# target to preprocess a source file
-src/ImagePile.c.i:
-	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/ImagePile.c.i
-.PHONY : src/ImagePile.c.i
-
-src/ImagePile.s: src/ImagePile.c.s
-
-.PHONY : src/ImagePile.s
-
-# target to generate assembly for a file
-src/ImagePile.c.s:
-	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/ImagePile.c.s
-.PHONY : src/ImagePile.c.s
-
 src/adjRelation.o: src/adjRelation.c.o
 
 .PHONY : src/adjRelation.o
@@ -339,6 +312,33 @@ src/image.c.s:
 	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/image.c.s
 .PHONY : src/image.c.s
 
+src/imagePile.o: src/imagePile.c.o
+
+.PHONY : src/imagePile.o
+
+# target to build an object file
+src/imagePile.c.o:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/imagePile.c.o
+.PHONY : src/imagePile.c.o
+
+src/imagePile.i: src/imagePile.c.i
+
+.PHONY : src/imagePile.i
+
+# target to preprocess a source file
+src/imagePile.c.i:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/imagePile.c.i
+.PHONY : src/imagePile.c.i
+
+src/imagePile.s: src/imagePile.c.s
+
+.PHONY : src/imagePile.s
+
+# target to generate assembly for a file
+src/imagePile.c.s:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/imagePile.c.s
+.PHONY : src/imagePile.c.s
+
 src/label.o: src/label.c.o
 
 .PHONY : src/label.o
@@ -459,9 +459,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/ImagePile.o"
-	@echo "... src/ImagePile.i"
-	@echo "... src/ImagePile.s"
 	@echo "... src/adjRelation.o"
 	@echo "... src/adjRelation.i"
 	@echo "... src/adjRelation.s"
@@ -480,6 +477,9 @@ help:
 	@echo "... src/image.o"
 	@echo "... src/image.i"
 	@echo "... src/image.s"
+	@echo "... src/imagePile.o"
+	@echo "... src/imagePile.i"
+	@echo "... src/imagePile.s"
 	@echo "... src/label.o"
 	@echo "... src/label.i"
 	@echo "... src/label.s"

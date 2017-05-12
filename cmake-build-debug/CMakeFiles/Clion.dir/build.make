@@ -321,28 +321,28 @@ CMakeFiles/Clion.dir/src/label.c.o.provides: CMakeFiles/Clion.dir/src/label.c.o.
 CMakeFiles/Clion.dir/src/label.c.o.provides.build: CMakeFiles/Clion.dir/src/label.c.o
 
 
-CMakeFiles/Clion.dir/src/ImagePile.c.o: CMakeFiles/Clion.dir/flags.make
-CMakeFiles/Clion.dir/src/ImagePile.c.o: ../src/ImagePile.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Clion.dir/src/ImagePile.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Clion.dir/src/ImagePile.c.o   -c /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/ImagePile.c
+CMakeFiles/Clion.dir/src/imagePile.c.o: CMakeFiles/Clion.dir/flags.make
+CMakeFiles/Clion.dir/src/imagePile.c.o: ../src/imagePile.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Clion.dir/src/imagePile.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Clion.dir/src/imagePile.c.o   -c /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/imagePile.c
 
-CMakeFiles/Clion.dir/src/ImagePile.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Clion.dir/src/ImagePile.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/ImagePile.c > CMakeFiles/Clion.dir/src/ImagePile.c.i
+CMakeFiles/Clion.dir/src/imagePile.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Clion.dir/src/imagePile.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/imagePile.c > CMakeFiles/Clion.dir/src/imagePile.c.i
 
-CMakeFiles/Clion.dir/src/ImagePile.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Clion.dir/src/ImagePile.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/ImagePile.c -o CMakeFiles/Clion.dir/src/ImagePile.c.s
+CMakeFiles/Clion.dir/src/imagePile.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Clion.dir/src/imagePile.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/imagePile.c -o CMakeFiles/Clion.dir/src/imagePile.c.s
 
-CMakeFiles/Clion.dir/src/ImagePile.c.o.requires:
+CMakeFiles/Clion.dir/src/imagePile.c.o.requires:
 
-.PHONY : CMakeFiles/Clion.dir/src/ImagePile.c.o.requires
+.PHONY : CMakeFiles/Clion.dir/src/imagePile.c.o.requires
 
-CMakeFiles/Clion.dir/src/ImagePile.c.o.provides: CMakeFiles/Clion.dir/src/ImagePile.c.o.requires
-	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/ImagePile.c.o.provides.build
-.PHONY : CMakeFiles/Clion.dir/src/ImagePile.c.o.provides
+CMakeFiles/Clion.dir/src/imagePile.c.o.provides: CMakeFiles/Clion.dir/src/imagePile.c.o.requires
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/imagePile.c.o.provides.build
+.PHONY : CMakeFiles/Clion.dir/src/imagePile.c.o.provides
 
-CMakeFiles/Clion.dir/src/ImagePile.c.o.provides.build: CMakeFiles/Clion.dir/src/ImagePile.c.o
+CMakeFiles/Clion.dir/src/imagePile.c.o.provides.build: CMakeFiles/Clion.dir/src/imagePile.c.o
 
 
 # Object files for target Clion
@@ -358,7 +358,7 @@ Clion_OBJECTS = \
 "CMakeFiles/Clion.dir/src/stringManipulation.c.o" \
 "CMakeFiles/Clion.dir/src/direct.c.o" \
 "CMakeFiles/Clion.dir/src/label.c.o" \
-"CMakeFiles/Clion.dir/src/ImagePile.c.o"
+"CMakeFiles/Clion.dir/src/imagePile.c.o"
 
 # External object files for target Clion
 Clion_EXTERNAL_OBJECTS =
@@ -374,7 +374,7 @@ Clion: CMakeFiles/Clion.dir/src/bow.c.o
 Clion: CMakeFiles/Clion.dir/src/stringManipulation.c.o
 Clion: CMakeFiles/Clion.dir/src/direct.c.o
 Clion: CMakeFiles/Clion.dir/src/label.c.o
-Clion: CMakeFiles/Clion.dir/src/ImagePile.c.o
+Clion: CMakeFiles/Clion.dir/src/imagePile.c.o
 Clion: CMakeFiles/Clion.dir/build.make
 Clion: CMakeFiles/Clion.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable Clion"
@@ -396,7 +396,7 @@ CMakeFiles/Clion.dir/requires: CMakeFiles/Clion.dir/src/bow.c.o.requires
 CMakeFiles/Clion.dir/requires: CMakeFiles/Clion.dir/src/stringManipulation.c.o.requires
 CMakeFiles/Clion.dir/requires: CMakeFiles/Clion.dir/src/direct.c.o.requires
 CMakeFiles/Clion.dir/requires: CMakeFiles/Clion.dir/src/label.c.o.requires
-CMakeFiles/Clion.dir/requires: CMakeFiles/Clion.dir/src/ImagePile.c.o.requires
+CMakeFiles/Clion.dir/requires: CMakeFiles/Clion.dir/src/imagePile.c.o.requires
 
 .PHONY : CMakeFiles/Clion.dir/requires
 

@@ -60,17 +60,14 @@ void printImage(Image *img){
 
 // _____________________reading functions_______________________
 
-void readImage(char imgPath[], Image *img){
+Image* readImage(char imgPath[]){
 
     char* ext = getExtention(imgPath);
-
     if( strcmp(ext, ".pgm") == 0){
-        readPGMImage(imgPath, img);
-        return;
+        return readPGMImage(imgPath);
     }
     if( strcmp(ext, ".ppm") == 0){
-        readPPMImage(imgPath, img);
-        return;
+        return readPPMImage(imgPath);
     }
     else{
         printf("extension %s not supported\n",ext);
@@ -78,8 +75,9 @@ void readImage(char imgPath[], Image *img){
 
 }
 //PGM------------
-void readPGMImage(char imgPath[], Image *img){
+Image* readPGMImage(char imgPath[]){
     FILE *f;
+    Image *img = malloc(sizeof(Image));
     f = fopen(imgPath, "rb");
     char magicNum[3];
     int cols, rows;
@@ -138,12 +136,14 @@ void readPGMImage(char imgPath[], Image *img){
        exit(-1);
    }
     fclose(f);
+    return img;
 }
 
 //PPM------------
-void readPPMImage(char imgPath[], Image *img){
+Image* readPPMImage(char imgPath[]){
 
     FILE *f;
+    Image *img = malloc(sizeof(Image));
     f = fopen(imgPath, "rb");
     char magicNum[3];
     int cols, rows;
@@ -209,6 +209,7 @@ void readPPMImage(char imgPath[], Image *img){
     }
 
     fclose(f);
+    return img;
 }
 // ___________________________________end______________________________
 
@@ -284,9 +285,9 @@ void saveP6Image(Image *img, char filename[]){
 }
 
 void copyImg(char *from, char *to){
-    Image img;
-    readImage(from,&img);
-    saveP6Image(&img,to);
+    Image *img;
+    img = readImage(from);
+    saveP6Image(img,to);
 }
 
 //____________________________________end__________________________________
@@ -336,7 +337,22 @@ void rgb2hsv(Image *rgbImg, Image *hsvImg){
 }
 //____________________________________end_________________________________
 
-void getSubImage (Image *img, Image *subImg, int rowB, int rowE, int colB, int colE){
+void duplicateImg(Image *img1, Image *img2){
+    setImage(img2, img1->nChannels,img1->numRows,img1->numCols,img1->maxIntensity);
+    int r,c;
+    for (int i = 0; i < img1->nChannels; ++i) {
+        for (int j = 0; j < img1->numPixels; ++j) {
+            img2->ch[i].vecIntensity[j] = img1->ch[i].vecIntensity[j];
+            r = j/img2->numCols;
+            c = j%img2->numCols;
+            img2->ch[i].matIntensity[r][c] = img2->ch[i].vecIntensity[j];
+        }
+    }
+}
+
+
+Image * getSubImage (Image *img, int rowB, int rowE, int colB, int colE){
+    Image *subImg = malloc(sizeof(Image));
     setImage(subImg, 3, rowE-rowB, colE-colB, 255);
     int k=0, index;
     for (int i = rowB; i < rowE; ++i) {
@@ -351,41 +367,5 @@ void getSubImage (Image *img, Image *subImg, int rowB, int rowE, int colB, int c
             k++;
         }
     }
-}
-
-Image *cropImage(Image *vecImg, int numImgs, int cutX, int cutY,int *pileSize){
-    int numSubImg = 0, ik=0, rowE, colE;
-    Image *cropPile;
-    for (int l = 0; l < numImgs; ++l) {
-        numSubImg += myCeil(vecImg[l].numRows/cutX) + myCeil(vecImg[l].numRows/cutY);
-    }
-
-    *pileSize = numSubImg;
-    cropPile = malloc(numSubImg*sizeof(Image));
-
-    for (int i = 0; i < numImgs; ++i) {
-        for (int j = 0; j < vecImg[i].numRows; j+=cutX) {
-            for (int k = 0; k < vecImg[i].numCols; k+=cutY) {
-
-                if(j+cutX>vecImg[i].numRows){
-                    rowE = j + (vecImg[i].numRows-j);
-                }
-                else{
-                    rowE = j + cutX;
-                }
-
-                if(k+cutY>vecImg[i].numCols){
-                    colE = k + (vecImg[i].numCols-k);
-                }
-                else{
-                    colE = k + cutY;
-                }
-
-                getSubImage(&vecImg[i], &cropPile[ik],j, rowE, k, colE);
-                ik++;
-            }
-        }
-
-    }
-    return  cropPile;
+    return subImg;
 }

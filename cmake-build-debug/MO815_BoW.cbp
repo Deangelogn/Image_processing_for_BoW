@@ -84,9 +84,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/ImagePile.h">
-			<Option target="Clion"/>
-		</Unit>
 		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/adjRelation.h">
 			<Option target="Clion"/>
 		</Unit>
@@ -105,6 +102,9 @@
 		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/image.h">
 			<Option target="Clion"/>
 		</Unit>
+		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/imagePile.h">
+			<Option target="Clion"/>
+		</Unit>
 		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/label.h">
 			<Option target="Clion"/>
 		</Unit>
@@ -118,9 +118,6 @@
 			<Option target="Clion"/>
 		</Unit>
 		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/main.c">
-			<Option target="Clion"/>
-		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/ImagePile.c">
 			<Option target="Clion"/>
 		</Unit>
 		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/adjRelation.c">
@@ -139,6 +136,9 @@
 			<Option target="Clion"/>
 		</Unit>
 		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/image.c">
+			<Option target="Clion"/>
+		</Unit>
+		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/imagePile.c">
 			<Option target="Clion"/>
 		</Unit>
 		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/label.c">

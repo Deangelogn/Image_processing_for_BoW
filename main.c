@@ -8,6 +8,7 @@
 #include "header/morphology.h"
 #include "header/stringManipulation.h"
 #include "header/direct.h"
+#include "header/imagePile.h"
 #include "header/bow.h"
 #include "header/label.h"
 
@@ -17,7 +18,7 @@ int main(int   argc, char *argv[])
     // ----- part 1 -------
     int numWords = 50, it = 1000, run=2;
     int numImg=0, numCropImg=0;
-    Image *imgPile, *cropImgPile;
+    ImagePile *imgPile, *cropImgPile;
     int bins[3]={4,4,4}; //histogram bins
     float begin=1, end=3, step=1; //Granulometry parameters
     int numClasses=5;
@@ -35,9 +36,12 @@ int main(int   argc, char *argv[])
     */
 
     // Create a pile of images
-    /*char *datasetDir = "/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/training_set5/";
-    imgPile = getImagesFrom(datasetDir,&numImg);
-    cropImgPile = cropImage(imgPile, numImg,64 ,64, &numCropImg);
+    char *datasetDir = "/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/test_set5/";
+    imgPile = getImagesFrom(datasetDir);
+
+    //sub-sampling images
+    cropImgPile = cropPile(imgPile,64,64);
+
 
     //histogram features
     Histogram histPile[numCropImg];
@@ -45,7 +49,7 @@ int main(int   argc, char *argv[])
         getRGBHistogram(&cropImgPile[i],&histPile[i], &bins);
     }
 
-
+/*
     //Granulometry features
     FeatureVector fv[numCropImg];
     int numFeatures = (int)((end-begin)/step)+1;

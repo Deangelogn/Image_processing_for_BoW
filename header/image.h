@@ -21,9 +21,9 @@ char * getExtention(char filename[]);
 void setImage(Image *img, int numChannels, int numRows, int numCols, int maxIntensity);
 void printImage(Image *img);
 
-void readImage(char imgPath[], Image *img);
-void readPGMImage(char imgPath[], Image *img);
-void readPPMImage(char imgPath[], Image *img);
+Image* readImage(char imgPath[]);
+Image* readPGMImage(char imgPath[]);
+Image* readPPMImage(char imgPath[]);
 
 void destroyImage(Image *img);
 
@@ -38,7 +38,7 @@ void rgb2ycbcr(Image *rgbImg, Image *ycbcrImg);
 void ycbcr2rgb(Image *ycbcrImg, Image *rgbImg);
 void rgb2hsv(Image *rgbImg, Image *hsvImg);
 
-void getSubImage (Image *img, Image *subImg, int rowB, int rowE, int colB, int colE);
-Image * cropImage(Image *vecImg, int numImgs, int cutX, int cutY,int *pileSize);
+void duplicateImg(Image *img1, Image *img2);
+Image * getSubImage (Image *img, int rowB, int rowE, int colB, int colE);
 
 #endif //CLION_IMAGE_H

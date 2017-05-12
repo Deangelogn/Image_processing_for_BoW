@@ -22,7 +22,7 @@ FeatureVector * getBowFeatures(Image *imgPile, int numImg, FeatureVector *Dict ,
     float begin=1, end=3, step=1;
 
     for (int i = 0; i < numImg; ++i) {
-        cropImg = cropImage(&imgPile[i],1,64,64,&pileSize);
+        //cropImg = cropImage(&imgPile[i],1,64,64,&pileSize);
 
         //hist
         Histogram histPile[pileSize];
@@ -86,7 +86,7 @@ float classifier(char *trainDir, char *testDir, FeatureVector *dic, int dictonar
 
                 char *imgFullPath = strAppend(testDir,ent->d_name);
                 rClass = getNumber(ent->d_name);
-                readImage(imgFullPath, &img);
+                //readImage(imgFullPath, &img);
 
                 FeatureVector *hwImg = getBowFeatures(&img, 1, dic , dictonarySize);
                 int idxK = findVisualWords(hwImg,kel,kSize);

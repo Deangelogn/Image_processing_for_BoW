@@ -13,6 +13,7 @@
 #include <time.h>
 #include "../header/myMath.h"
 #include "../header/stringManipulation.h"
+#include "../header/imagePile.h"
 
 void createDir(char path[]){
 
@@ -141,12 +142,12 @@ void saveDatasetInfo(int *pInt,int nClasses, int spc, int ID, float percentTrain
     fclose(f);
 }
 
-Image *getImagesFrom(char *path, int *numImg){
+ImagePile *getImagesFrom(char *path){
+
+    ImagePile *imgPile = createImagePile(numFiles(path));
+    Image *img;
+
     char *imgFullPath;
-    *numImg = numFiles(path);
-    int nI = *numImg;
-    Image img[*numImg], *pileImg;
-    pileImg = malloc(nI*sizeof(Image));
     int k=0;
 
     DIR *dir;
@@ -158,9 +159,9 @@ Image *getImagesFrom(char *path, int *numImg){
         while ((ent = readdir (dir)) != NULL) {
             if( !((strcmp(ent->d_name,".")==0) || (strcmp(ent->d_name,"..")==0)) ){
                 imgFullPath = strAppend(path,ent->d_name);
-                //printf("%d: %s\n",k, imgFullPath);
-                readImage(imgFullPath, &pileImg[k]);
-                saveP6Image(&pileImg[k],"/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/teste1.ppm");
+                img = readImage(imgFullPath);
+                duplicateImg(img,&imgPile->img[k]);
+                //saveP6Image(&imgPile->img[k],"/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/teste1.ppm");
                 k++;
             }
         }
@@ -170,5 +171,5 @@ Image *getImagesFrom(char *path, int *numImg){
         perror ("");
         return EXIT_FAILURE;
     }
-    return pileImg;
+    return imgPile;
 }
