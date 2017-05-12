@@ -127,7 +127,7 @@ FeatureVector* kmeans(FeatureVector *featMat,int numObjs, int numKernels,int it)
     return kernel;
 }
 
-/*float knn (FeatureVector *kernels, int* labels, FeatureVector *input ){
+/*float knn (FeatureMatrix *kernels, int* labels, FeatureVector *input ){
 
     return 0;
 }*/

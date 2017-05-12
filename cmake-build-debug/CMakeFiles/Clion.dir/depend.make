@@ -16,6 +16,7 @@ CMakeFiles/Clion.dir/main.c.o: ../main.c
 
 CMakeFiles/Clion.dir/src/Features.c.o: ../header/adjRelation.h
 CMakeFiles/Clion.dir/src/Features.c.o: ../header/features.h
+CMakeFiles/Clion.dir/src/Features.c.o: ../header/histogram.h
 CMakeFiles/Clion.dir/src/Features.c.o: ../header/image.h
 CMakeFiles/Clion.dir/src/Features.c.o: ../header/imagePile.h
 CMakeFiles/Clion.dir/src/Features.c.o: ../header/morphology.h
@@ -24,6 +25,7 @@ CMakeFiles/Clion.dir/src/Features.c.o: ../src/Features.c
 
 CMakeFiles/Clion.dir/src/adjRelation.c.o: ../header/adjRelation.h
 CMakeFiles/Clion.dir/src/adjRelation.c.o: ../header/features.h
+CMakeFiles/Clion.dir/src/adjRelation.c.o: ../header/histogram.h
 CMakeFiles/Clion.dir/src/adjRelation.c.o: ../header/image.h
 CMakeFiles/Clion.dir/src/adjRelation.c.o: ../header/imagePile.h
 CMakeFiles/Clion.dir/src/adjRelation.c.o: ../header/morphology.h
@@ -33,6 +35,7 @@ CMakeFiles/Clion.dir/src/adjRelation.c.o: ../src/adjRelation.c
 CMakeFiles/Clion.dir/src/alg.c.o: ../header/adjRelation.h
 CMakeFiles/Clion.dir/src/alg.c.o: ../header/alg.h
 CMakeFiles/Clion.dir/src/alg.c.o: ../header/features.h
+CMakeFiles/Clion.dir/src/alg.c.o: ../header/histogram.h
 CMakeFiles/Clion.dir/src/alg.c.o: ../header/image.h
 CMakeFiles/Clion.dir/src/alg.c.o: ../header/imagePile.h
 CMakeFiles/Clion.dir/src/alg.c.o: ../header/morphology.h
@@ -54,6 +57,7 @@ CMakeFiles/Clion.dir/src/bow.c.o: ../src/bow.c
 CMakeFiles/Clion.dir/src/direct.c.o: ../header/adjRelation.h
 CMakeFiles/Clion.dir/src/direct.c.o: ../header/direct.h
 CMakeFiles/Clion.dir/src/direct.c.o: ../header/features.h
+CMakeFiles/Clion.dir/src/direct.c.o: ../header/histogram.h
 CMakeFiles/Clion.dir/src/direct.c.o: ../header/image.h
 CMakeFiles/Clion.dir/src/direct.c.o: ../header/imagePile.h
 CMakeFiles/Clion.dir/src/direct.c.o: ../header/morphology.h
@@ -73,6 +77,7 @@ CMakeFiles/Clion.dir/src/histogram.c.o: ../src/histogram.c
 
 CMakeFiles/Clion.dir/src/image.c.o: ../header/adjRelation.h
 CMakeFiles/Clion.dir/src/image.c.o: ../header/features.h
+CMakeFiles/Clion.dir/src/image.c.o: ../header/histogram.h
 CMakeFiles/Clion.dir/src/image.c.o: ../header/image.h
 CMakeFiles/Clion.dir/src/image.c.o: ../header/imagePile.h
 CMakeFiles/Clion.dir/src/image.c.o: ../header/morphology.h
@@ -81,6 +86,7 @@ CMakeFiles/Clion.dir/src/image.c.o: ../src/image.c
 
 CMakeFiles/Clion.dir/src/imagePile.c.o: ../header/adjRelation.h
 CMakeFiles/Clion.dir/src/imagePile.c.o: ../header/features.h
+CMakeFiles/Clion.dir/src/imagePile.c.o: ../header/histogram.h
 CMakeFiles/Clion.dir/src/imagePile.c.o: ../header/image.h
 CMakeFiles/Clion.dir/src/imagePile.c.o: ../header/imagePile.h
 CMakeFiles/Clion.dir/src/imagePile.c.o: ../header/morphology.h
@@ -92,6 +98,7 @@ CMakeFiles/Clion.dir/src/label.c.o: ../src/label.c
 
 CMakeFiles/Clion.dir/src/morphology.c.o: ../header/adjRelation.h
 CMakeFiles/Clion.dir/src/morphology.c.o: ../header/features.h
+CMakeFiles/Clion.dir/src/morphology.c.o: ../header/histogram.h
 CMakeFiles/Clion.dir/src/morphology.c.o: ../header/image.h
 CMakeFiles/Clion.dir/src/morphology.c.o: ../header/imagePile.h
 CMakeFiles/Clion.dir/src/morphology.c.o: ../header/morphology.h
@@ -100,6 +107,7 @@ CMakeFiles/Clion.dir/src/morphology.c.o: ../src/morphology.c
 
 CMakeFiles/Clion.dir/src/myMath.c.o: ../header/adjRelation.h
 CMakeFiles/Clion.dir/src/myMath.c.o: ../header/features.h
+CMakeFiles/Clion.dir/src/myMath.c.o: ../header/histogram.h
 CMakeFiles/Clion.dir/src/myMath.c.o: ../header/image.h
 CMakeFiles/Clion.dir/src/myMath.c.o: ../header/imagePile.h
 CMakeFiles/Clion.dir/src/myMath.c.o: ../header/morphology.h

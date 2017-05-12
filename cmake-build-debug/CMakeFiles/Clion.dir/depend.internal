@@ -17,6 +17,7 @@ CMakeFiles/Clion.dir/main.c.o
 CMakeFiles/Clion.dir/src/Features.c.o
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/adjRelation.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/features.h
+ /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/histogram.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/image.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/imagePile.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/morphology.h
@@ -25,6 +26,7 @@ CMakeFiles/Clion.dir/src/Features.c.o
 CMakeFiles/Clion.dir/src/adjRelation.c.o
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/adjRelation.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/features.h
+ /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/histogram.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/image.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/imagePile.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/morphology.h
@@ -34,6 +36,7 @@ CMakeFiles/Clion.dir/src/alg.c.o
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/adjRelation.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/alg.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/features.h
+ /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/histogram.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/image.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/imagePile.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/morphology.h
@@ -55,6 +58,7 @@ CMakeFiles/Clion.dir/src/direct.c.o
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/adjRelation.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/direct.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/features.h
+ /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/histogram.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/image.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/imagePile.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/morphology.h
@@ -74,6 +78,7 @@ CMakeFiles/Clion.dir/src/histogram.c.o
 CMakeFiles/Clion.dir/src/image.c.o
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/adjRelation.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/features.h
+ /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/histogram.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/image.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/imagePile.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/morphology.h
@@ -82,6 +87,7 @@ CMakeFiles/Clion.dir/src/image.c.o
 CMakeFiles/Clion.dir/src/imagePile.c.o
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/adjRelation.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/features.h
+ /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/histogram.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/image.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/imagePile.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/morphology.h
@@ -93,6 +99,7 @@ CMakeFiles/Clion.dir/src/label.c.o
 CMakeFiles/Clion.dir/src/morphology.c.o
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/adjRelation.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/features.h
+ /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/histogram.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/image.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/imagePile.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/morphology.h
@@ -101,6 +108,7 @@ CMakeFiles/Clion.dir/src/morphology.c.o
 CMakeFiles/Clion.dir/src/myMath.c.o
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/adjRelation.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/features.h
+ /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/histogram.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/image.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/imagePile.h
  /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/morphology.h

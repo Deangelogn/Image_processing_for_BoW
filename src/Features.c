@@ -111,3 +111,34 @@ void printFM(FeatureMatrix *fm){
         printf("\n");
     }
 }
+
+FeatureMatrix* MergeFMWithHistogram(FeatureMatrix *fm,Histogram *hist){
+    FeatureMatrix *mfm = createFeaturematrix(fm->fv[0].numFeatures + hist[0].numBins ,fm->numFV);
+
+    for (int i = 0; i < fm->numFV; ++i) {
+        for (int j = 0; j < fm->fv[0].numFeatures; ++j) {
+            mfm->fv[i].features[j] = fm->fv[i].features[j];
+        }
+    }
+
+    int k = fm->fv[0].numFeatures;
+    for (int i = 0; i < fm->numFV; ++i) {
+        for (int j = 0; j < hist->numBins; ++j) {
+            mfm->fv[i].features[k+j] = hist[i].normBin[j];
+        }
+    }
+
+    return mfm;
+}
+
+void saveFM (char *filename, FeatureMatrix *fm){
+    FILE *f = fopen(filename,"w");
+    fprintf(f,"%d %d\n", fm->numFV,fm->fv[0].numFeatures);
+    for (int i = 0; i < fm->numFV; ++i) {
+        for (int j = 0; j < fm->fv[i].numFeatures; ++j) {
+            fprintf(f,"%f ", fm->fv[i].features[j]);
+        }
+        fprintf(f,"\n");
+    }
+    fclose(f);
+}

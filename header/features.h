@@ -5,6 +5,8 @@
 #ifndef MO815_BOW_FEATURES_H
 #define MO815_BOW_FEATURES_H
 
+#include "histogram.h"
+
 typedef struct FeatureVector{
     float *features;
     int numFeatures;
@@ -27,5 +29,7 @@ FeatureVector *importDictonary(char *path, int *numFV);
 FeatureMatrix *createFeaturematrix(int FVSize,int numFV);
 void setFVinFM(FeatureVector *fv, float *features);
 void printFM(FeatureMatrix *fm);
+FeatureMatrix* MergeFMWithHistogram(FeatureMatrix *fm,Histogram *hist);
+void saveFM (char *filename, FeatureMatrix *fm);
 
 #endif //MO815_BOW_FEATURES_H

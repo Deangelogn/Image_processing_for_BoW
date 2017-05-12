@@ -46,9 +46,12 @@ int main(int   argc, char *argv[])
     Histogram *histPile = createRGBHistogramFromPile(cropImgPile,binsPerChannel);
 
     //get granulometry features
-    FeatureMatrix *fm = getGranulometryFromPile(imgPile,begin,end,step);
+    FeatureMatrix *granulometryPile = getGranulometryFromPile(imgPile,begin,end,step);
 
-    //vecMerge()
+    //Merge features
+    FeatureMatrix *fm = MergeFMWithHistogram(granulometryPile,histPile);
+
+    saveFM("/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/fm.txt",fm);
 
     return 0;
 }
