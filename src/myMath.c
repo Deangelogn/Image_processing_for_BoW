@@ -166,7 +166,7 @@ double myCeil(double num){
 
 void *vecMerge(float *vec1, float *vec2, int size1,int size2, FeatureVector *mergeVec){
     mergeVec->features = malloc((size1+size2)*sizeof(float));
-    mergeVec->size = size1 + size2;
+    mergeVec->numFeatures = size1 + size2;
     for (int i = 0; i < size1; ++i) {
         mergeVec->features[i] = vec1[i];
     }
@@ -179,8 +179,8 @@ void *vecMerge(float *vec1, float *vec2, int size1,int size2, FeatureVector *mer
 void fv2array(FeatureVector *fv,float *vecOut, int vecSize){
     //vecOut = malloc(vecSize*fv->size*sizeof(float));
     for (int i = 0; i < vecSize; ++i) {
-        for (int j = 0; j <fv->size ; ++j) {
-            vecOut[i*fv->size+j] = fv[i].features[j];
+        for (int j = 0; j <fv->numFeatures ; ++j) {
+            vecOut[i*fv->numFeatures+j] = fv[i].features[j];
         }
     }
 }

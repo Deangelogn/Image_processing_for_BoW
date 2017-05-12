@@ -56,7 +56,7 @@ void imClose(Image *img, Image *clImg, int ch, AdjRelation *adjRel){
 }
 
 float * getGranulometry(Image *img, float start, float end, float step){
-    int numIt = (int)((end-start)/step)+1;
+    int numIt = (int)((end-start)/step);
     float currentStep = start;
     float *features = malloc(numIt*sizeof(float));
     AdjRelation adjRel;
@@ -81,82 +81,14 @@ double sumIntensities(Image *img, int ch){
     return sum;
 }
 
-void destroyFeatureVector(FeatureVector *fv){
-    free(fv->features);
-}
-
-void setFeatureVector(FeatureVector *fv, int numElem){
-    fv->features = malloc(numElem*sizeof(float));
-    fv->size = numElem;
-}
-
-void copyFV(FeatureVector *fv1, FeatureVector *fv2){
-
-    for (int i = 0; i < fv1->size; ++i) {
-        fv2->features[i] = fv1->features[i];
+FeatureMatrix *getGranulometryFromPile(ImagePile *imgPile, float begin, float end, float step){
+    int FVsize = (int)round(end - begin)/step;
+    float currentIt = begin;
+    FeatureMatrix *fm = createFeaturematrix(FVsize,imgPile->pileSize);
+    float *granulometryFeatures;
+    for (int i = 0; i < imgPile->pileSize; ++i) {
+        granulometryFeatures = getGranulometry(&imgPile->img[i], begin,end,step);
+        setFVinFM(&fm->fv[i],granulometryFeatures);
     }
-
-}
-
-double distFV(FeatureVector *fv1, FeatureVector *fv2){
-    double result =0;
-    for (int i = 0; i < fv1->size; ++i) {
-        result += powD((fv1->features[i] - fv2->features[i]),2);
-    }
-    return  sqroot(result);
-}
-
-void sumFV(FeatureVector * fv1, FeatureVector *fv2){
-    for (int i = 0; i < fv1->size; ++i) {
-        fv1->features[i] += fv2->features[i];
-    //    printf("v1: %f, v2: %f\n",fv1->features[i], fv2->features[i]);
-    }
-}
-
-void printFV(FeatureVector * fv){
-    for (int i = 0; i < fv->size; ++i) {
-        printf("%f, ",fv->features[i]);
-    }
-    printf("\n");
-}
-
-float maxValueFV(FeatureVector *fv){
-    float max = fv->features[0];
-    for (int i = 1; i < fv->size; ++i) {
-        if(fv->features[i]>max){
-            max = fv->features[i];
-        }
-    }
-    return max;
-}
-
-void saveFV(char *filename, FeatureVector *fv, int numFV){
-
-    FILE *f = fopen(filename,"w");
-    fprintf(f,"%d %d\n", numFV,fv[0].size);
-    for (int i = 0; i < numFV; ++i) {
-        for (int j = 0; j < fv[i].size; ++j) {
-            fprintf(f,"%f ", fv[i].features[j]);
-        }
-        fprintf(f,"\n");
-    }
-    fclose(f);
-}
-
-FeatureVector *importDictonary(char *path, int *numFV){
-
-    FILE *f = fopen(path,"r");
-    int vecSize, nfv;
-    fscanf(f,"%d %d\n", &nfv,&vecSize);
-    *numFV = nfv;
-
-    FeatureVector *fv = malloc(nfv*sizeof(FeatureVector));
-    for (int i = 0; i < nfv; ++i) {
-        setFeatureVector(&fv[i],vecSize);
-        for (int j = 0; j < fv[i].size; ++j) {
-            fscanf(f,"%f ", &fv[i].features[j]);
-        }
-    }
-    fclose(f);
-    return fv;
+    return fm;
 }

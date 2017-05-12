@@ -40,7 +40,7 @@ void zeroStart(int *p, int vecSize){
 }
 
 void zeroFV(FeatureVector *fv){
-    for (int i = 0; i < fv->size; ++i) {
+    for (int i = 0; i < fv->numFeatures; ++i) {
         fv->features[i] = 0;
     }
 }
@@ -79,10 +79,10 @@ FeatureVector* kmeans(FeatureVector *featMat,int numObjs, int numKernels,int it)
 
     srand( time(NULL) );
     for (int i = 0; i < numKernels; ++i) {
-        kernel[i].features = malloc(featMat[0].size*sizeof(float));
-        kernel[i].size = featMat[0].size;
-        setFeatureVector(&kernelNew[i],featMat[0].size);
-        for (int j = 0; j < kernel[i].size; ++j) {
+        kernel[i].features = malloc(featMat[0].numFeatures*sizeof(float));
+        kernel[i].numFeatures = featMat[0].numFeatures;
+        setFeatureVector(&kernelNew[i],featMat[0].numFeatures);
+        for (int j = 0; j < kernel[i].numFeatures; ++j) {
             kernel[i].features[j] = (float)rand()/(float)(RAND_MAX);
         }
     }
@@ -105,7 +105,7 @@ FeatureVector* kmeans(FeatureVector *featMat,int numObjs, int numKernels,int it)
         }
 
         for (int j = 0; j < numKernels; ++j) {
-            for (int i = 0; i < kernelNew[j].size; ++i) {
+            for (int i = 0; i < kernelNew[j].numFeatures; ++i) {
                 kernelNew[j].features[i] += (kernel[j].features[i]);
                 kernelNew[j].features[i] /= (kernelCont.features[j]+1);
             }

@@ -3,6 +3,7 @@
 //
 
 #include "image.h"
+#include "imagePile.h"
 
 #ifndef CLION_HISTOGRAM_H
 #define CLION_HISTOGRAM_H
@@ -10,13 +11,17 @@
 typedef struct Histogram{
     int numBins;
     int *bins;
-    float *normBins;
-    float *binWindow;
+    float *normBin;
 }Histogram;
 
-void getGrayHistogram(Image *img,Histogram *hist, int numBins);
-void getRGBHistogram(Image *img, Histogram *hist,int *binsPerChannel);
-void initBins(Histogram *hist, int *binsPerChannel, int numChannels);
+Histogram* getGrayHistogram(Image *img, int numBins);
+Histogram *getRGBHistogram(Image *img,int binsPerChannel);
+Histogram * createHistogram(int numBins);
 void destroyHistogram(Histogram *hist);
+void printHistogram(Histogram *hist);
+void setRGBHistogramFromImage(Histogram *hist, Image *img, int numBinsPerChannel);
+Histogram *createRGBHistogramFromPile(ImagePile *imgPile, int binsPerChannel);
+void createHistogramByPointer(int numBins, Histogram *hist);
+void copyHistogram(Histogram *hist1, Histogram *hist2);
 
 #endif //CLION_HISTOGRAM_H

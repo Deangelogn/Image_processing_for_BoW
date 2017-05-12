@@ -27,7 +27,7 @@ FeatureVector * getBowFeatures(Image *imgPile, int numImg, FeatureVector *Dict ,
         //hist
         Histogram histPile[pileSize];
         for (int j = 0; j < pileSize; ++j) {
-            getRGBHistogram(&cropImg[j],&histPile[j], &bins);
+        //    getRGBHistogram(&cropImg[j],&histPile[j], &bins);
         }
 
         //granulo
@@ -35,7 +35,7 @@ FeatureVector * getBowFeatures(Image *imgPile, int numImg, FeatureVector *Dict ,
         int numFeatures = (int)((end-begin)/step)+1;
         for (int j = 0; j < pileSize; ++j) {
             float *granulometryFeatures = getGranulometry(&cropImg[j], begin, end,step);
-            vecMerge (histPile[j].normBins, granulometryFeatures, histPile[j].numBins, numFeatures, &fv[j]);
+            vecMerge (histPile[j].normBin, granulometryFeatures, histPile[j].numBins, numFeatures, &fv[j]);
         }
 
         // closest word

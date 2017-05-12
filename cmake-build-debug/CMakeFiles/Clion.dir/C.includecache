@@ -24,9 +24,13 @@ image.h
 imagePile.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/imagePile.h
 
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/features.h
+
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/histogram.h
 image.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/image.h
+imagePile.h
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/imagePile.h
 
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/image.h
 
@@ -41,6 +45,10 @@ image.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/image.h
 adjRelation.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/adjRelation.h
+features.h
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/features.h
+imagePile.h
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/imagePile.h
 
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/myMath.h
 ../header/morphology.h
@@ -65,8 +73,6 @@ header/adjRelation.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/adjRelation.h
 header/morphology.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/morphology.h
-header/stringManipulation.h
-/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/stringManipulation.h
 header/direct.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/direct.h
 header/imagePile.h
@@ -75,8 +81,20 @@ header/bow.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/bow.h
 header/label.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/label.h
+header/features.h
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/features.h
 dirent.h
 -
+
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/Features.c
+stdio.h
+-
+stdlib.h
+-
+../header/myMath.h
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/myMath.h
+../header/features.h
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/features.h
 
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/adjRelation.c
 ../header/image.h
@@ -157,6 +175,10 @@ time.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/histogram.h
 ../header/alg.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/alg.h
+../header/myMath.h
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/myMath.h
+../header/imagePile.h
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/imagePile.h
 stdlib.h
 -
 stdio.h

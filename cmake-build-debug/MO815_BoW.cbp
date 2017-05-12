@@ -96,6 +96,9 @@
 		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/direct.h">
 			<Option target="Clion"/>
 		</Unit>
+		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/features.h">
+			<Option target="Clion"/>
+		</Unit>
 		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/histogram.h">
 			<Option target="Clion"/>
 		</Unit>
@@ -118,6 +121,9 @@
 			<Option target="Clion"/>
 		</Unit>
 		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/main.c">
+			<Option target="Clion"/>
+		</Unit>
+		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/Features.c">
 			<Option target="Clion"/>
 		</Unit>
 		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/adjRelation.c">

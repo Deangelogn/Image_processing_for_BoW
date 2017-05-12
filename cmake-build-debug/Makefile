@@ -150,6 +150,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/main.c.s
 .PHONY : main.c.s
 
+src/Features.o: src/Features.c.o
+
+.PHONY : src/Features.o
+
+# target to build an object file
+src/Features.c.o:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/Features.c.o
+.PHONY : src/Features.c.o
+
+src/Features.i: src/Features.c.i
+
+.PHONY : src/Features.i
+
+# target to preprocess a source file
+src/Features.c.i:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/Features.c.i
+.PHONY : src/Features.c.i
+
+src/Features.s: src/Features.c.s
+
+.PHONY : src/Features.s
+
+# target to generate assembly for a file
+src/Features.c.s:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/Features.c.s
+.PHONY : src/Features.c.s
+
 src/adjRelation.o: src/adjRelation.c.o
 
 .PHONY : src/adjRelation.o
@@ -459,6 +486,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/Features.o"
+	@echo "... src/Features.i"
+	@echo "... src/Features.s"
 	@echo "... src/adjRelation.o"
 	@echo "... src/adjRelation.i"
 	@echo "... src/adjRelation.s"

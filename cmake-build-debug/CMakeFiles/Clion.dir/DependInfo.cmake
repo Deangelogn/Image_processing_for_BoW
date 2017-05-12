@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/eu/Desktop/C_C++/Image_processing_for_BoW/main.c" "/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles/Clion.dir/main.c.o"
+  "/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/Features.c" "/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles/Clion.dir/src/Features.c.o"
   "/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/adjRelation.c" "/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles/Clion.dir/src/adjRelation.c.o"
   "/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/alg.c" "/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles/Clion.dir/src/alg.c.o"
   "/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/bow.c" "/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles/Clion.dir/src/bow.c.o"
