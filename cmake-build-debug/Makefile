@@ -150,6 +150,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/main.c.s
 .PHONY : main.c.s
 
+src/ImagePile.o: src/ImagePile.c.o
+
+.PHONY : src/ImagePile.o
+
+# target to build an object file
+src/ImagePile.c.o:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/ImagePile.c.o
+.PHONY : src/ImagePile.c.o
+
+src/ImagePile.i: src/ImagePile.c.i
+
+.PHONY : src/ImagePile.i
+
+# target to preprocess a source file
+src/ImagePile.c.i:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/ImagePile.c.i
+.PHONY : src/ImagePile.c.i
+
+src/ImagePile.s: src/ImagePile.c.s
+
+.PHONY : src/ImagePile.s
+
+# target to generate assembly for a file
+src/ImagePile.c.s:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/ImagePile.c.s
+.PHONY : src/ImagePile.c.s
+
 src/adjRelation.o: src/adjRelation.c.o
 
 .PHONY : src/adjRelation.o
@@ -312,6 +339,33 @@ src/image.c.s:
 	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/image.c.s
 .PHONY : src/image.c.s
 
+src/label.o: src/label.c.o
+
+.PHONY : src/label.o
+
+# target to build an object file
+src/label.c.o:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/label.c.o
+.PHONY : src/label.c.o
+
+src/label.i: src/label.c.i
+
+.PHONY : src/label.i
+
+# target to preprocess a source file
+src/label.c.i:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/label.c.i
+.PHONY : src/label.c.i
+
+src/label.s: src/label.c.s
+
+.PHONY : src/label.s
+
+# target to generate assembly for a file
+src/label.c.s:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/label.c.s
+.PHONY : src/label.c.s
+
 src/morphology.o: src/morphology.c.o
 
 .PHONY : src/morphology.o
@@ -405,6 +459,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/ImagePile.o"
+	@echo "... src/ImagePile.i"
+	@echo "... src/ImagePile.s"
 	@echo "... src/adjRelation.o"
 	@echo "... src/adjRelation.i"
 	@echo "... src/adjRelation.s"
@@ -423,6 +480,9 @@ help:
 	@echo "... src/image.o"
 	@echo "... src/image.i"
 	@echo "... src/image.s"
+	@echo "... src/label.o"
+	@echo "... src/label.i"
+	@echo "... src/label.s"
 	@echo "... src/morphology.o"
 	@echo "... src/morphology.i"
 	@echo "... src/morphology.s"

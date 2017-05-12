@@ -7,65 +7,7 @@
 #include "../header/myMath.h"
 #include "../header/alg.h"
 
-
-/*FeatureVector* kmeans(FeatureVector *featMat,int numObjs , int numKernels,int it){
-    int kernelElements = numKernels*vecSize;
-    float* kernels = malloc(kernelElements*sizeof(float));
-    float* totalSum = malloc(kernelElements*sizeof(float));
-    float* errorVec = malloc(kernelElements*sizeof(float));
-    double erGoal = 0.0000000000000001;
-    int numElements = numObjs*vecSize;
-    int count=0, idx, kernelCont[numKernels];
-
-    srand( time(NULL) );
-    for (int i = 0; i < kernelElements; ++i) {
-        kernels[i] = (float)rand()/(float)(RAND_MAX);
-    }
-
-    float *p, kernelVariation;
-    while(count<=it){
-        zeroStart(&kernelCont, numKernels);
-        zeroStartF(totalSum, kernelElements);
-
-        for (int i = 0; i < numElements; i+=vecSize){
-            p = getSubVec(featMat,vecSize,i);
-            int idx = closestVec(p,kernels,vecSize,numKernels);
-            kernelCont[idx]++;
-            sumVec(totalSum, p, idx*vecSize, idx*vecSize+vecSize);
-        }
-
-        for (int j = 0; j < kernelElements; ++j) {
-            kernelVariation = (totalSum[j]+kernels[j])/(float)(kernelCont[j/vecSize]+1);
-            errorVec[j] = absf(kernels[j] - kernelVariation);
-            kernels[j] = kernelVariation;
-        }
-
-        if(maxF(errorVec, kernelElements)<=erGoal){
-            break;
-        }
-        count++;
-        //printf("maxE: %f\n", maxF(errorVec, kernelElements));
-    }
-
-    printf("it: %d", count);
-
-    if(count>=it){
-        printf("Nucleos não convergiram");
-    }
-
-    FILE *fp = fopen(outputFile, "wb");
-    fprintf(fp,"%d %d\n", numKernels, vecSize);
-    for (int k = 0; k <kernelElements ; ++k) {
-        fprintf(fp,"%f ", kernels[k]);
-        if((k+1)%vecSize==0){
-            fprintf(fp,"\n");
-        }
-    }
-
-    fclose(fp);
-}*/
-
-float * getSubVec(float *vec, int size, int begin){
+float *getSubVec(float *vec, int size, int begin){
     float *p = malloc(size*sizeof(float));
     for (int i = 0; i < size; ++i) {
         p[i] = vec[i+begin];
@@ -185,3 +127,7 @@ FeatureVector* kmeans(FeatureVector *featMat,int numObjs, int numKernels,int it)
     return kernel;
 }
 
+/*float knn (FeatureVector *kernels, int* labels, FeatureVector *input ){
+
+    return 0;
+}*/

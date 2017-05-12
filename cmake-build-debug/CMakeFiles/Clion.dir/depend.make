@@ -7,6 +7,7 @@ CMakeFiles/Clion.dir/main.c.o: ../header/bow.h
 CMakeFiles/Clion.dir/main.c.o: ../header/direct.h
 CMakeFiles/Clion.dir/main.c.o: ../header/histogram.h
 CMakeFiles/Clion.dir/main.c.o: ../header/image.h
+CMakeFiles/Clion.dir/main.c.o: ../header/label.h
 CMakeFiles/Clion.dir/main.c.o: ../header/morphology.h
 CMakeFiles/Clion.dir/main.c.o: ../header/myMath.h
 CMakeFiles/Clion.dir/main.c.o: ../header/stringManipulation.h
@@ -55,6 +56,9 @@ CMakeFiles/Clion.dir/src/image.c.o: ../header/image.h
 CMakeFiles/Clion.dir/src/image.c.o: ../header/morphology.h
 CMakeFiles/Clion.dir/src/image.c.o: ../header/myMath.h
 CMakeFiles/Clion.dir/src/image.c.o: ../src/image.c
+
+CMakeFiles/Clion.dir/src/label.c.o: ../header/label.h
+CMakeFiles/Clion.dir/src/label.c.o: ../src/label.c
 
 CMakeFiles/Clion.dir/src/morphology.c.o: ../header/adjRelation.h
 CMakeFiles/Clion.dir/src/morphology.c.o: ../header/image.h

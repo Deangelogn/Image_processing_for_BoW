@@ -9,39 +9,42 @@
 #include "header/stringManipulation.h"
 #include "header/direct.h"
 #include "header/bow.h"
+#include "header/label.h"
 
 #include <dirent.h>
 int main(int   argc, char *argv[])
 {
     // ----- part 1 -------
-    int numWords = 3, it = 10000, run=1;
+    int numWords = 50, it = 1000, run=2;
     int numImg=0, numCropImg=0;
     Image *imgPile, *cropImgPile;
-    int bins[3]={2,2,2}; //histogram bins
+    int bins[3]={4,4,4}; //histogram bins
     float begin=1, end=3, step=1; //Granulometry parameters
-    int numClasses=2;
+    int numClasses=5;
 
     //create random training and test datasets from coil database
     //uncomment this part if you wish to generate a dataset
-    /*
-    int *pInt = randInt(10,numClasses), ID = 3;
+
+    int *pInt = randInt(100,numClasses), ID = 5;
     float per = 0.84;
-    char *srcDir = "/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/classes/";
+
+    /*char *srcDir = "/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/classes/";
     char *tarDir = "/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/";
     createDatasetFrom(pInt,numClasses, srcDir, tarDir, ID, per);
     saveDatasetInfo(pInt,numClasses,72,ID,per,"/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/");
     */
 
     // Create a pile of images
-    char *datasetDir = "/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/training_set3/";
+    /*char *datasetDir = "/home/eu/Desktop/C_C++/Image_processing_for_BoW/Data/training_set5/";
     imgPile = getImagesFrom(datasetDir,&numImg);
-    cropImgPile = cropImage(imgPile, numImg, 64,64, &numCropImg);
+    cropImgPile = cropImage(imgPile, numImg,64 ,64, &numCropImg);
 
     //histogram features
-    /*Histogram histPile[numCropImg];
+    Histogram histPile[numCropImg];
     for (int i = 0; i < numCropImg; ++i) {
         getRGBHistogram(&cropImgPile[i],&histPile[i], &bins);
     }
+
 
     //Granulometry features
     FeatureVector fv[numCropImg];
@@ -51,13 +54,7 @@ int main(int   argc, char *argv[])
         vecMerge (histPile[i].normBins, granulometryFeatures, histPile[i].numBins, numFeatures, &fv[i]);
     }
 
-    for (int k = 0; k < numCropImg; ++k) {
-        printf("%d: ", k);
-        for (int i = 0; i < fv[k].size; ++i) {
-            printf(" %f, ", fv[k].features[i]);
-        }
-        printf("\n");
-    }
+
 
     //Create dictonary
     FeatureVector *vw;
@@ -66,7 +63,7 @@ int main(int   argc, char *argv[])
     char filename[100];
     sprintf(filename, "/home/eu/Desktop/C_C++/Image_processing_for_BoW/dictonary/dic_%d.txt", run);
 
-    saveFV(filename,vw,numWords);*/
+    saveFV(filename,vw,numWords);
 
     // ----- part 2 -------
     int dictonarySize;
@@ -76,7 +73,7 @@ int main(int   argc, char *argv[])
     FeatureVector *dic = importDictonary(fileRead, &dictonarySize);
 
     FeatureVector *histWord = getBowFeatures(imgPile, numImg, dic , dictonarySize);
-    /*FeatureVector fv2[numImg];
+    FeatureVector fv2[numImg];
     for (int i = 0; i < numImg; ++i) {
        setFeatureVector(&fv2[i],histWord[i].size);
         for (int j = 0; j < histWord[i].size; ++j) {
@@ -88,14 +85,7 @@ int main(int   argc, char *argv[])
 
     char fileSave2[100];
     sprintf(fileSave2, "/home/eu/Desktop/C_C++/Image_processing_for_BoW/dictonary/clk_%d.txt", run);
-    saveFV(fileSave2,cl,numClasses);*/
-
-
-
-    /*for (int i = 0; i < kSize; ++i) {
-        int idx = findVisualWords(&kel[i],histWord,numImg);
-        printf("%d\n", idx);
-    }*/
+    saveFV(fileSave2,cl,numClasses);
 
     // ----- part 3 -------
 
@@ -109,13 +99,12 @@ int main(int   argc, char *argv[])
     float acc = classifier(datasetDir, testDir, dic, dictonarySize, kel, kSize, histWord, numImg);
     printf("acc: %f", acc);
 
-
     for (int j = 0; j < numImg; ++j){
         destroyImage(&imgPile[j]);
     }
     for (int j = 0; j < numCropImg; ++j){
         destroyImage(&cropImgPile[j]);
-    }
+    }*/
 
     return 0;
 }

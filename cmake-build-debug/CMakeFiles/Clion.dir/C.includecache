@@ -28,6 +28,8 @@ image.h
 
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/image.h
 
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/label.h
+
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/morphology.h
 image.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/image.h
@@ -63,6 +65,8 @@ header/direct.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/direct.h
 header/bow.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/bow.h
+header/label.h
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/label.h
 dirent.h
 -
 
@@ -159,6 +163,16 @@ stdlib.h
 -
 ../header/myMath.h
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/header/myMath.h
+
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/label.c
+stdlib.h
+-
+memory.h
+-
+stdio.h
+-
+../header/label.h
+/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/label.h
 
 /home/eu/Desktop/C_C++/Image_processing_for_BoW/src/morphology.c
 stdlib.h

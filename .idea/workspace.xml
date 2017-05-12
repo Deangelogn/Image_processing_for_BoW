@@ -12,24 +12,535 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3963bc0e-8f7d-450c-ab7a-08438c38ef3e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/bow.c.o" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/header/ImagePile.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ImagePile.c" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/datasetInfo_ID1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/datasetInfo_ID3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj10__0.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj10__100.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj10__105.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj10__140.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj10__150.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj10__170.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj10__205.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj10__225.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj10__295.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj10__310.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj10__340.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj10__5.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj4__105.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj4__110.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj4__120.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj4__145.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj4__160.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj4__195.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj4__215.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj4__240.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj4__310.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj4__330.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj4__350.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj4__50.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj5__105.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj5__15.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj5__160.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj5__205.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj5__245.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj5__255.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj5__260.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj5__265.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj5__280.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj5__310.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj5__355.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj5__5.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj8__100.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj8__15.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj8__155.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj8__160.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj8__175.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj8__200.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj8__215.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj8__280.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj8__285.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj8__315.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj8__90.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj8__95.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj9__10.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj9__115.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj9__165.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj9__195.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj9__220.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj9__270.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj9__285.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj9__35.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj9__45.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj9__55.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj9__80.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set1/obj9__95.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj10__10.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj10__105.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj10__110.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj10__115.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj10__150.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj10__170.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj10__205.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj10__225.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj10__265.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj10__345.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj10__5.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj10__60.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj6__0.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj6__125.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj6__175.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj6__185.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj6__205.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj6__215.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj6__220.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj6__245.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj6__275.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj6__350.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj6__40.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/test_set3/obj6__95.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__10.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__110.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__115.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__120.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__125.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__130.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__135.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__145.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__15.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__155.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__160.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__165.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__175.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__180.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__185.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__190.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__195.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__20.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__200.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__210.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__215.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__220.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__230.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__235.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__240.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__245.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__25.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__250.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__255.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__260.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__265.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__270.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__275.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__280.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__285.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__290.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__30.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__300.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__305.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__315.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__320.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__325.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__330.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__335.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__345.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__35.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__350.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__355.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__40.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__45.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__50.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__55.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__60.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__65.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__70.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__75.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__80.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__85.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__90.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj10__95.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__0.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__10.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__100.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__115.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__125.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__130.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__135.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__140.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__15.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__150.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__155.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__165.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__170.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__175.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__180.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__185.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__190.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__20.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__200.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__205.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__210.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__220.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__225.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__230.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__235.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__245.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__25.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__250.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__255.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__260.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__265.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__270.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__275.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__280.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__285.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__290.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__295.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__30.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__300.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__305.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__315.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__320.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__325.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__335.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__340.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__345.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__35.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__355.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__40.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__45.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__5.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__55.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__60.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__65.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__70.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__75.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__80.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__85.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__90.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj4__95.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__0.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__10.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__100.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__110.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__115.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__120.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__125.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__130.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__135.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__140.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__145.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__150.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__155.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__165.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__170.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__175.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__180.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__185.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__190.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__195.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__20.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__200.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__210.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__215.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__220.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__225.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__230.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__235.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__240.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__25.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__250.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__270.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__275.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__285.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__290.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__295.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__30.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__300.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__305.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__315.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__320.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__325.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__330.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__335.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__340.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__345.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__35.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__350.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__40.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__45.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__50.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__55.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__60.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__65.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__70.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__75.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__80.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__85.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__90.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj5__95.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__0.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__10.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__105.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__110.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__115.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__120.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__125.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__130.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__135.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__140.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__145.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__150.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__165.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__170.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__180.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__185.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__190.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__195.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__20.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__205.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__210.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__220.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__225.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__230.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__235.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__240.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__245.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__25.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__250.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__255.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__260.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__265.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__270.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__275.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__290.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__295.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__30.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__300.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__305.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__310.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__320.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__325.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__330.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__335.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__340.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__345.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__35.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__350.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__355.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__40.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__45.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__5.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__50.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__55.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__60.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__65.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__70.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__75.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__80.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj8__85.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__0.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__100.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__105.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__110.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__120.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__125.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__130.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__135.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__140.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__145.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__15.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__150.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__155.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__160.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__170.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__175.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__180.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__185.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__190.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__20.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__200.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__205.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__210.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__215.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__225.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__230.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__235.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__240.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__245.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__25.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__250.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__255.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__260.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__265.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__275.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__280.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__290.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__295.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__30.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__300.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__305.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__310.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__315.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__320.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__325.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__330.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__335.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__340.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__345.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__350.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__355.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__40.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__5.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__50.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__60.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__65.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__70.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__75.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__85.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set1/obj9__90.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__0.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__100.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__120.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__125.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__130.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__135.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__140.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__145.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__15.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__155.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__160.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__165.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__175.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__180.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__185.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__190.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__195.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__20.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__200.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__210.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__215.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__220.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__230.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__235.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__240.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__245.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__25.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__250.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__255.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__260.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__270.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__275.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__280.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__285.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__290.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__295.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__30.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__300.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__305.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__310.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__315.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__320.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__325.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__330.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__335.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__340.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__35.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__350.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__355.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__40.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__45.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__50.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__55.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__65.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__70.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__75.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__80.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__85.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__90.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj10__95.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__10.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__100.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__105.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__110.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__115.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__120.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__130.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__135.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__140.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__145.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__15.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__150.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__155.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__160.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__165.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__170.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__180.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__190.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__195.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__20.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__200.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__210.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__225.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__230.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__235.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__240.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__25.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__250.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__255.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__260.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__265.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__270.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__280.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__285.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__290.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__295.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__30.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__300.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__305.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__310.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__315.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__320.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__325.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__330.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__335.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__340.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__345.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__35.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__355.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__45.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__5.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__50.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__55.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__60.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__65.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__70.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__75.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__80.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__85.ppm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/training_set3/obj6__90.ppm" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/teste1.ppm" afterPath="$PROJECT_DIR$/Data/teste1.ppm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/main.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/main.c.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/alg.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/alg.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/image.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/src/image.c.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Clion" afterPath="$PROJECT_DIR$/cmake-build-debug/Clion" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/C.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/C.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/cmake_clean.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/depend.internal" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dictonary/dic_1.txt" afterPath="$PROJECT_DIR$/dictonary/dic_1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header/bow.h" afterPath="$PROJECT_DIR$/header/bow.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Clion.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/MO815_BoW.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/MO815_BoW.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header/alg.h" afterPath="$PROJECT_DIR$/header/alg.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.c" afterPath="$PROJECT_DIR$/main.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alg.c" afterPath="$PROJECT_DIR$/src/alg.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bow.c" afterPath="$PROJECT_DIR$/src/bow.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/image.c" afterPath="$PROJECT_DIR$/src/image.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/morphology.c" afterPath="$PROJECT_DIR$/src/morphology.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stringManipulation.c" afterPath="$PROJECT_DIR$/src/stringManipulation.c" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,8 +556,8 @@
       <file leaf-file-name="main.c" pinned="true" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+            <state relative-caret-position="648">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -54,11 +565,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bow.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ImagePile.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/header/ImagePile.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImagePile.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ImagePile.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bow.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bow.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="125" column="31" lean-forward="true" selection-start-line="125" selection-start-column="31" selection-end-line="125" selection-end-column="31" />
+            <state relative-caret-position="1386">
+              <caret line="77" column="39" lean-forward="false" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
               <folding>
                 <element signature="e#37#56#0" expanded="true" />
               </folding>
@@ -66,21 +597,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stringManipulation.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stringManipulation.c">
+      <file leaf-file-name="image.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/image.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bow.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/header/bow.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="43" lean-forward="false" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+            <state relative-caret-position="6462">
+              <caret line="359" column="0" lean-forward="false" selection-start-line="359" selection-start-column="0" selection-end-line="359" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -89,28 +610,40 @@
       <file leaf-file-name="alg.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/alg.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+            <state relative-caret-position="2376">
+              <caret line="132" column="3" lean-forward="false" selection-start-line="132" selection-start-column="3" selection-end-line="132" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="morphology.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/header/morphology.h">
+      <file leaf-file-name="alg.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/header/alg.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="29" column="55" lean-forward="false" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+            <state relative-caret-position="144">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/image.c">
+      <file leaf-file-name="label.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/label.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7020">
-              <caret line="390" column="0" lean-forward="false" selection-start-line="390" selection-start-column="0" selection-end-line="390" selection-end-column="0" />
+            <state relative-caret-position="267">
+              <caret line="34" column="41" lean-forward="false" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+              <folding>
+                <element signature="e#37#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="label.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/header/label.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -119,8 +652,8 @@
       <file leaf-file-name="myMath.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/myMath.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+            <state relative-caret-position="3564">
+              <caret line="198" column="29" lean-forward="false" selection-start-line="198" selection-start-column="29" selection-end-line="198" selection-end-column="29" />
               <folding>
                 <element signature="e#63#82#0" expanded="true" />
               </folding>
@@ -152,18 +685,20 @@
         <option value="$PROJECT_DIR$/header/image.h" />
         <option value="$PROJECT_DIR$/header/myMath.h" />
         <option value="$PROJECT_DIR$/header/stringManipulation.h" />
-        <option value="$PROJECT_DIR$/src/myMath.c" />
         <option value="$PROJECT_DIR$/header/direct.h" />
         <option value="$PROJECT_DIR$/src/direct.c" />
-        <option value="$PROJECT_DIR$/header/alg.h" />
         <option value="$PROJECT_DIR$/header/morphology.h" />
         <option value="$PROJECT_DIR$/src/image.c" />
         <option value="$PROJECT_DIR$/src/morphology.c" />
-        <option value="$PROJECT_DIR$/src/alg.c" />
         <option value="$PROJECT_DIR$/header/bow.h" />
         <option value="$PROJECT_DIR$/src/stringManipulation.c" />
-        <option value="$PROJECT_DIR$/main.c" />
         <option value="$PROJECT_DIR$/src/bow.c" />
+        <option value="$PROJECT_DIR$/src/myMath.c" />
+        <option value="$PROJECT_DIR$/header/alg.h" />
+        <option value="$PROJECT_DIR$/header/label.h" />
+        <option value="$PROJECT_DIR$/src/alg.c" />
+        <option value="$PROJECT_DIR$/src/label.c" />
+        <option value="$PROJECT_DIR$/main.c" />
       </list>
     </option>
   </component>
@@ -522,29 +1057,34 @@
       <workItem from="1493951859488" duration="1995000" />
       <workItem from="1493954093338" duration="182000" />
       <workItem from="1493954491289" duration="26491000" />
-      <workItem from="1494002542021" duration="16902000" />
+      <workItem from="1494002542021" duration="17456000" />
+      <workItem from="1494022359210" duration="3254000" />
+      <workItem from="1494033953281" duration="873000" />
+      <workItem from="1494039201766" duration="1739000" />
+      <workItem from="1494533093727" duration="1729000" />
+      <workItem from="1494546524132" duration="4076000" />
+      <workItem from="1494553373460" duration="986000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181749000" />
+    <option name="totallyTimeSpent" value="194960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31390134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31390134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3961136" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -592,42 +1132,11 @@
           <option name="timeStamp" value="79" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="80" />
+      <option name="time" value="81" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alg.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myMath.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1818">
-          <caret line="101" column="1" lean-forward="true" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header/myMath.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header/alg.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -824,14 +1333,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header/myMath.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header/stringManipulation.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -843,7 +1344,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -851,7 +1351,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="24" column="46" lean-forward="false" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -859,15 +1358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
           <caret line="29" column="55" lean-forward="false" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header/alg.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="70" lean-forward="false" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -878,29 +1368,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/image.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7020">
-          <caret line="390" column="0" lean-forward="false" selection-start-line="390" selection-start-column="0" selection-end-line="390" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myMath.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-          <folding>
-            <element signature="e#63#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dictonary/clk_1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -908,7 +1379,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="363" column="11" lean-forward="false" selection-start-line="363" selection-start-column="11" selection-end-line="363" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -916,7 +1386,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="43" lean-forward="false" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,9 +1393,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="161" column="52" lean-forward="false" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="52" />
-          <folding>
-            <element signature="e#36#65#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -934,43 +1400,109 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/alg.c">
+    <entry file="file://$PROJECT_DIR$/header/myMath.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+        <state relative-caret-position="558">
+          <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/stringManipulation.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
+        <state relative-caret-position="162">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bow.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="77" column="39" lean-forward="false" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
+          <folding>
+            <element signature="e#37#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myMath.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3564">
+          <caret line="198" column="29" lean-forward="false" selection-start-line="198" selection-start-column="29" selection-end-line="198" selection-end-column="29" />
+          <folding>
+            <element signature="e#63#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/image.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6462">
+          <caret line="359" column="0" lean-forward="false" selection-start-line="359" selection-start-column="0" selection-end-line="359" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header/alg.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alg.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2376">
+          <caret line="132" column="3" lean-forward="false" selection-start-line="132" selection-start-column="3" selection-end-line="132" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header/label.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/label.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="34" column="41" lean-forward="false" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+          <folding>
+            <element signature="e#37#56#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+        <state relative-caret-position="648">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bow.c">
+    <entry file="file://$PROJECT_DIR$/header/ImagePile.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="125" column="31" lean-forward="true" selection-start-line="125" selection-start-column="31" selection-end-line="125" selection-end-column="31" />
-          <folding>
-            <element signature="e#37#56#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ImagePile.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
