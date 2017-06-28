@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Clion.dir/src/label.c.o"
   "CMakeFiles/Clion.dir/src/imagePile.c.o"
   "CMakeFiles/Clion.dir/src/Features.c.o"
+  "CMakeFiles/Clion.dir/run/createDataset.c.o"
+  "CMakeFiles/Clion.dir/src/filter.c.o"
   "Clion.pdb"
   "Clion"
 )

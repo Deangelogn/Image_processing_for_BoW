@@ -60,8 +60,8 @@ float * getGranulometry(Image *img, float start, float end, float step){
     float currentStep = start;
     float *features = malloc(numIt*sizeof(float));
     AdjRelation adjRel;
-    Image ycbcrImg, granImg;
-    rgb2ycbcr(img, &ycbcrImg);
+    Image granImg;
+    Image *ycbcrImg = rgb2ycbcr(img);
 
     for (int i = 0; i < numIt; ++i) {
         createLosangeAdjacency(&adjRel, (int)currentStep);

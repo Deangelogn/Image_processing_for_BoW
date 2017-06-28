@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug"/>
+				<Option working_dir="/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug"/>
+				<Option working_dir="/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug"/>
+				<Option working_dir="/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Clion">
-				<Option output="/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Clion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug"/>
+				<Option output="/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Clion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -54,15 +54,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 Clion"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 Clion"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Clion/fast">
-				<Option output="/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Clion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug"/>
+				<Option output="/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Clion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -77,89 +77,98 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 Clion/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 Clion/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/adjRelation.h">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/header/adjRelation.h">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/alg.h">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/header/alg.h">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/bow.h">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/header/bow.h">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/direct.h">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/header/direct.h">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/features.h">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/header/features.h">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/histogram.h">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/header/filter.h">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/image.h">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/header/histogram.h">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/imagePile.h">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/header/image.h">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/label.h">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/header/imagePile.h">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/morphology.h">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/header/label.h">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/myMath.h">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/header/morphology.h">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/header/stringManipulation.h">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/header/myMath.h">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/main.c">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/header/stringManipulation.h">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/Features.c">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/main.c">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/adjRelation.c">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/run/createDataset.c">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/alg.c">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/src/Features.c">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/bow.c">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/src/adjRelation.c">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/direct.c">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/src/alg.c">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/histogram.c">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/src/bow.c">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/image.c">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/src/direct.c">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/imagePile.c">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/src/filter.c">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/label.c">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/src/histogram.c">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/morphology.c">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/src/image.c">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/myMath.c">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/src/imagePile.c">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/src/stringManipulation.c">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/src/label.c">
 			<Option target="Clion"/>
 		</Unit>
-		<Unit filename="/home/eu/Desktop/C_C++/Image_processing_for_BoW/CMakeLists.txt">
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/src/morphology.c">
+			<Option target="Clion"/>
+		</Unit>
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/src/myMath.c">
+			<Option target="Clion"/>
+		</Unit>
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/src/stringManipulation.c">
+			<Option target="Clion"/>
+		</Unit>
+		<Unit filename="/home/eu/Desktop/Image_processing_for_BoW/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

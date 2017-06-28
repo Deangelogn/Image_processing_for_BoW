@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/eu/Desktop/clion-2017.1/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/eu/Desktop/programs/clion-2017.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/eu/Desktop/clion-2017.1/bin/cmake/bin/cmake -E remove -f
+RM = /home/eu/Desktop/programs/clion-2017.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eu/Desktop/C_C++/Image_processing_for_BoW
+CMAKE_SOURCE_DIR = /home/eu/Desktop/Image_processing_for_BoW
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug
+CMAKE_BINARY_DIR = /home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-d
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/eu/Desktop/clion-2017.1/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/eu/Desktop/programs/clion-2017.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/eu/Desktop/clion-2017.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/eu/Desktop/programs/clion-2017.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles /home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/CMakeFiles /home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eu/Desktop/C_C++/Image_processing_for_BoW/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eu/Desktop/Image_processing_for_BoW/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -149,6 +149,33 @@ main.s: main.c.s
 main.c.s:
 	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/main.c.s
 .PHONY : main.c.s
+
+run/createDataset.o: run/createDataset.c.o
+
+.PHONY : run/createDataset.o
+
+# target to build an object file
+run/createDataset.c.o:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/run/createDataset.c.o
+.PHONY : run/createDataset.c.o
+
+run/createDataset.i: run/createDataset.c.i
+
+.PHONY : run/createDataset.i
+
+# target to preprocess a source file
+run/createDataset.c.i:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/run/createDataset.c.i
+.PHONY : run/createDataset.c.i
+
+run/createDataset.s: run/createDataset.c.s
+
+.PHONY : run/createDataset.s
+
+# target to generate assembly for a file
+run/createDataset.c.s:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/run/createDataset.c.s
+.PHONY : run/createDataset.c.s
 
 src/Features.o: src/Features.c.o
 
@@ -284,6 +311,33 @@ src/direct.s: src/direct.c.s
 src/direct.c.s:
 	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/direct.c.s
 .PHONY : src/direct.c.s
+
+src/filter.o: src/filter.c.o
+
+.PHONY : src/filter.o
+
+# target to build an object file
+src/filter.c.o:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/filter.c.o
+.PHONY : src/filter.c.o
+
+src/filter.i: src/filter.c.i
+
+.PHONY : src/filter.i
+
+# target to preprocess a source file
+src/filter.c.i:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/filter.c.i
+.PHONY : src/filter.c.i
+
+src/filter.s: src/filter.c.s
+
+.PHONY : src/filter.s
+
+# target to generate assembly for a file
+src/filter.c.s:
+	$(MAKE) -f CMakeFiles/Clion.dir/build.make CMakeFiles/Clion.dir/src/filter.c.s
+.PHONY : src/filter.c.s
 
 src/histogram.o: src/histogram.c.o
 
@@ -486,6 +540,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... run/createDataset.o"
+	@echo "... run/createDataset.i"
+	@echo "... run/createDataset.s"
 	@echo "... src/Features.o"
 	@echo "... src/Features.i"
 	@echo "... src/Features.s"
@@ -501,6 +558,9 @@ help:
 	@echo "... src/direct.o"
 	@echo "... src/direct.i"
 	@echo "... src/direct.s"
+	@echo "... src/filter.o"
+	@echo "... src/filter.i"
+	@echo "... src/filter.s"
 	@echo "... src/histogram.o"
 	@echo "... src/histogram.i"
 	@echo "... src/histogram.s"

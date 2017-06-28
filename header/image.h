@@ -19,7 +19,10 @@ typedef struct Image{
 
 char * getExtention(char filename[]);
 void setImage(Image *img, int numChannels, int numRows, int numCols, int maxIntensity);
+Image * zeroImage(int row, int col, int c);
 void printImage(Image *img);
+void printImageFromTo(Image *img,int x_begin,int x_end, int y_begin, int y_end, int c_begin, int c_end);
+Image * getChannel(Image *img, int c);
 
 Image* readImage(char imgPath[]);
 Image* readPGMImage(char imgPath[]);
@@ -34,11 +37,15 @@ void saveP3Image(Image *img, char filename[]);
 void saveP6Image(Image *img, char filename[]);
 void copyImg(char *from, char *to);
 
-void rgb2ycbcr(Image *rgbImg, Image *ycbcrImg);
+Image * rgb2ycbcr(Image *rgbImg);
 void ycbcr2rgb(Image *ycbcrImg, Image *rgbImg);
 void rgb2hsv(Image *rgbImg, Image *hsvImg);
 
 void duplicateImg(Image *img1, Image *img2);
 Image * getSubImage (Image *img, int rowB, int rowE, int colB, int colE);
+void setVal(Image *img, float val, int x, int y, int c);
+float maxImg(Image*img);
+
+Image * roundImage(Image *img);
 
 #endif //CLION_IMAGE_H

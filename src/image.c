@@ -55,6 +55,31 @@ void printImage(Image *img){
     }
 }
 
+void printImageFromTo(Image *img,int x_begin,int x_end, int y_begin, int y_end, int c_begin, int c_end){
+    for (int i = c_begin; i < c_end+1; ++i) {
+        for (int j = x_begin; j < x_end; ++j) {
+            for (int k = y_begin; k < y_end; ++k) {
+                printf("%.2f ", img->ch[i].matIntensity[j][k]);
+            }
+            printf("\n");
+        }
+    }
+}
+
+Image * zeroImage(int row, int col, int c){
+    Image * image = (Image*)malloc(sizeof(Image));
+    setImage(image,c,row,col,255);
+    //printf("%d,%d,%d,%d\n", image->numRows,image->numCols,image->nChannels,image->maxIntensity);
+    for (int i = 0; i < c; ++i) {
+        for (int j = 0; j < row; ++j) {
+            for (int k = 0; k < col; ++k) {
+                setVal(image,0,j,k,i);
+            }
+        }
+    }
+    return image;
+}
+
 //____________________________end___________________________________
 
 
@@ -126,6 +151,7 @@ Image* readPGMImage(char imgPath[]){
         for(int i=0; i< img->numPixels; i++){
             r = i/img->numCols;
             c = i%img->numCols;
+            printf("%f\n",img->ch[0].vecIntensity[i]);
             img->ch[0].matIntensity[r][c] = img->ch[0].vecIntensity[i];
         }
     }
@@ -204,7 +230,7 @@ Image* readPPMImage(char imgPath[]){
         }
     }
     else{
-        fprintf(stderr,"Unknown magic number.\n");
+        fprintf(stderr,"Unknown magic number %s.\n", magicNum);
         exit(-1);
     }
 
@@ -241,7 +267,7 @@ void saveP2Image(Image *img, char filename[]){
 
     for (int i = 0; i < img->numRows; i++){
         for (int j = 0; j < img->numCols; j++){
-            fprintf(f,"%f ",img->ch[0].matIntensity[i][j]);
+            fprintf(f,"%.0f ",img->ch[0].matIntensity[i][j]);
         }
         fprintf(f,"\n");
     }
@@ -293,23 +319,28 @@ void copyImg(char *from, char *to){
 //____________________________________end__________________________________
 
 //_____________________________Conversions________________________________
-void rgb2ycbcr(Image *rgbImg, Image *ycbcrImg){
-
+Image * rgb2ycbcr(Image *rgbImg){
+    Image *ycbcrImg = zeroImage(0,0,0);
     setImage(ycbcrImg, rgbImg->nChannels, rgbImg->numRows, rgbImg->numCols, 240);
 
     float Kr = 0.257, Kg = 0.504, Kb = 0.098;
     float Cbr = -0.148, Cbg = -0.291, Cbb = 0.439;
     float Crr = 0.439, Crg = -0.368, Crb = -0.071;
     int R,G,B;
+    float valY,valCb, valCr;
 
     for (int i = 0; i < rgbImg->numPixels; ++i) {
         R = rgbImg->ch[0].vecIntensity[i];
         G = rgbImg->ch[1].vecIntensity[i];
         B = rgbImg->ch[2].vecIntensity[i];
-        ycbcrImg->ch[0].vecIntensity[i] = (float)clip(round(Kr*R + Kg*G + Kb*B + 16), 16, ycbcrImg->maxIntensity);
-        ycbcrImg->ch[1].vecIntensity[i] = (float)clip(round(Cbr*R + Cbg*G + Cbb*B + 128),16, ycbcrImg->maxIntensity);
-        ycbcrImg->ch[2].vecIntensity[i] = (float)clip(round(Crr*R + Crg*G + Crb*B + 128),16, ycbcrImg->maxIntensity);
+        valY = (float)clip(round(Kr*R + Kg*G + Kb*B + 16), 16, ycbcrImg->maxIntensity);
+        valCb = (float)clip(round(Cbr*R + Cbg*G + Cbb*B + 128),16, ycbcrImg->maxIntensity);
+        valCr = (float)clip(round(Crr*R + Crg*G + Crb*B + 128),16, ycbcrImg->maxIntensity);
+        setVal(ycbcrImg,valY,i/rgbImg->numCols, i%rgbImg->numCols, 0);
+        setVal(ycbcrImg,valCb,i/rgbImg->numCols, i%rgbImg->numCols, 1);
+        setVal(ycbcrImg,valCr,i/rgbImg->numCols, i%rgbImg->numCols, 2);
     }
+    return ycbcrImg;
 }
 
 void ycbcr2rgb(Image *ycbcrImg, Image *rgbImg){
@@ -334,6 +365,12 @@ void ycbcr2rgb(Image *ycbcrImg, Image *rgbImg){
 
 void rgb2hsv(Image *rgbImg, Image *hsvImg){
 
+}
+
+Image* rgb2gray(Image *rgbImg){
+    Image *image = NULL;
+
+    return image;
 }
 //____________________________________end_________________________________
 
@@ -368,4 +405,42 @@ Image * getSubImage (Image *img, int rowB, int rowE, int colB, int colE){
         }
     }
     return subImg;
+}
+
+void setVal(Image *img, float val, int x, int y, int c){
+    img->ch[c].matIntensity[x][y] = val;
+    img->ch[c].vecIntensity[x*img->numCols + y] = val;
+}
+
+Image * roundImage(Image *img){
+    Image *image = zeroImage(img->numRows,img->numCols,img->nChannels);
+    for (int i = 0; i < img->nChannels; ++i) {
+        for (int j = 0; j < img->numRows; ++j) {
+            for (int k = 0; k < img->numCols; ++k) {
+                setVal(image,round(img->ch[i].matIntensity[j][k]),j,k,i);
+            }
+        }
+    }
+    return image;
+}
+
+Image * getChannel(Image *img, int c){
+    Image *image = zeroImage(img->numRows,img->numCols,1);
+    for (int i = 0; i < img->numRows; ++i) {
+        for (int j = 0; j < img->numCols; ++j) {
+            setVal(image,img->ch[c].matIntensity[i][j],i,j,0);
+        }
+    }
+
+    return image;
+}
+
+float maxImg(Image*img){
+    float max=0;
+    for (int i = 0; i < img->numPixels; ++i) {
+        if(img->ch[0].vecIntensity[i]>max){
+            max = img->ch[0].vecIntensity[i];
+        }
+    }
+    return max;
 }

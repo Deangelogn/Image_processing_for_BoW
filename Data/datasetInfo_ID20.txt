@@ -1,5 +1,0 @@
-Dataset ID: 20
-total samples: 360
-num train samples: 300
-num test samples: 60
-Classes: 96, 99, 98, 97, 100.

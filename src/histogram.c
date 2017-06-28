@@ -28,13 +28,13 @@ Histogram *getRGBHistogram(Image *img,int binsPerChannel){
     float Gwindow = 256/binsPerChannel;
     float Bwindow = 256/binsPerChannel;
     int idx;
-
     int R,G,B;
     for (int i = 0; i < img->numPixels; ++i) {
         R = (int)(img->ch[0].vecIntensity[i]/Rwindow);
         G = (int)(img->ch[1].vecIntensity[i]/Gwindow);
         B = (int)(img->ch[2].vecIntensity[i]/Bwindow);
-        hist->bins[R+(G*binsPerChannel)+(B*binsPerChannel*binsPerChannel)]++;
+        idx = R+(G*binsPerChannel)+(B*binsPerChannel*binsPerChannel);
+        hist->bins[idx]++;
     }
 
     for (int j = 0; j < hist->numBins; ++j) {

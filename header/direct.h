@@ -14,5 +14,7 @@ void createDataSet(char sourceDir[], char targetDir[], int ID, float percentTrai
 void createDatasetFrom(int *pInt, int numClasses, char *srcDir, char *tarDir,int ID, float percentTrainSample);
 void saveDatasetInfo(int *pInt, int nClasses, int spc, int ID, float percentTrainSample, char *pathDir);
 ImagePile *getImagesFrom(char *path);
+void createFileDataset(char *srcDir, char *tarDir, int ID, float percentTrainSample);
+void createDatasetFileFromData(char sourceDir[], char targetDir[], float percentTrainSample, int ID);
 
 #endif //MO815_BOW_DIRECT_H

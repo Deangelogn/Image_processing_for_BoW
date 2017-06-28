@@ -207,3 +207,19 @@ int *randInt(int maxValue, int numElements){
 
     return pOut;
 }
+
+Image *dotEuclidianDist(Image* img1, Image* img2){
+
+    Image *image = zeroImage(img1->numRows,img1->numCols,img1->nChannels);
+    float v1,v2;
+    for (int i = 0; i < img1->nChannels; ++i) {
+        for (int j = 0; j < img1->numRows; ++j) {
+            for (int k = 0; k < img1->numCols; ++k) {
+                v1 = img1->ch[i].matIntensity[j][k];
+                v2 = img2->ch[i].matIntensity[j][k];
+                setVal(image,sqroot(powD(v1,2) + powD(v2,2)),j,k,i);
+            }
+        }
+    }
+    return image;
+}
